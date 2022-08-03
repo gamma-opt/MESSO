@@ -1,0 +1,2 @@
+('transmission', "Could not convert '€/km' to type 'float' (near row 9)")
+('transmission', "Could not convert 'evtl 2x' to type 'float' (near row 9)")

@@ -1,0 +1,8 @@
+Could not import relationship class 'model__report' with object classes ('model', 'report'): At least one of the object class ids of the relationship class 'model__report' is not in the database.
+Could not import relationship with objects ('instance', 'my_report') into 'model__report': There is no object class id list for relationship 'model__report_instance__my_report'
+Could not import relationship class 'report__output' with object classes ('report', 'output'): At least one of the object class ids of the relationship class 'report__output' is not in the database.
+Could not import relationship with objects ('my_report', 'connection_flow') into 'report__output': There is no object class id list for relationship 'report__output_my_report__connection_flow'
+Could not import relationship class 'report__output' with object classes ('report', 'output'): At least one of the object class ids of the relationship class 'report__output' is not in the database.
+Could not import relationship with objects ('my_report', 'node_state') into 'report__output': There is no object class id list for relationship 'report__output_my_report__node_state'
+Could not import relationship class 'report__output' with object classes ('report', 'output'): At least one of the object class ids of the relationship class 'report__output' is not in the database.
+Could not import relationship with objects ('my_report', 'unit_flow') into 'report__output': There is no object class id list for relationship 'report__output_my_report__unit_flow'

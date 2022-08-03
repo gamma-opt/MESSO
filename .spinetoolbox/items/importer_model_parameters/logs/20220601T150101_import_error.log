@@ -1,0 +1,64 @@
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship with objects ('FIN', 'FIN_to_NOR') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_FIN__FIN_to_NOR'
+Could not import relationship with objects ('FIN', 'FIN_to_SWE') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_FIN__FIN_to_SWE'
+Could not import relationship with objects ('FIN', 'FIN_to_BAL') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_FIN__FIN_to_BAL'
+Could not import relationship with objects ('NOR', 'NOR_to_SWE') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_NOR__NOR_to_SWE'
+Could not import relationship with objects ('NOR', 'NOR_to_DEN') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_NOR__NOR_to_DEN'
+Could not import relationship with objects ('SWE', 'SWE_to_DEN') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_SWE__SWE_to_DEN'
+Could not import relationship with objects ('SWE', 'SWE_to_BAL') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_SWE__SWE_to_BAL'
+Could not import relationship with objects ('DEN', 'DEN_to_BAL') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_DEN__DEN_to_BAL'
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship with objects ('FIN', 'FIN_to_NOR') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_FIN__FIN_to_NOR'
+Could not import relationship with objects ('FIN', 'FIN_to_SWE') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_FIN__FIN_to_SWE'
+Could not import relationship with objects ('FIN', 'FIN_to_BAL') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_FIN__FIN_to_BAL'
+Could not import relationship with objects ('NOR', 'NOR_to_SWE') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_NOR__NOR_to_SWE'
+Could not import relationship with objects ('NOR', 'NOR_to_DEN') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_NOR__NOR_to_DEN'
+Could not import relationship with objects ('SWE', 'SWE_to_DEN') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_SWE__SWE_to_DEN'
+Could not import relationship with objects ('SWE', 'SWE_to_BAL') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_SWE__SWE_to_BAL'
+Could not import relationship with objects ('DEN', 'DEN_to_BAL') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_DEN__DEN_to_BAL'
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship class 'connection__to_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__to_node' is not in the database.
+Could not import relationship with objects ('NOR', 'FIN_to_NOR') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_NOR__FIN_to_NOR'
+Could not import relationship with objects ('SWE', 'FIN_to_SWE') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_SWE__FIN_to_SWE'
+Could not import relationship with objects ('BAL', 'FIN_to_BAL') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_BAL__FIN_to_BAL'
+Could not import relationship with objects ('SWE', 'NOR_to_SWE') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_SWE__NOR_to_SWE'
+Could not import relationship with objects ('DEN', 'NOR_to_DEN') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_DEN__NOR_to_DEN'
+Could not import relationship with objects ('DEN', 'SWE_to_DEN') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_DEN__SWE_to_DEN'
+Could not import relationship with objects ('BAL', 'SWE_to_BAL') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_BAL__SWE_to_BAL'
+Could not import relationship with objects ('BAL', 'DEN_to_BAL') into 'connection__to_node': There is no object class id list for relationship 'connection__to_node_BAL__DEN_to_BAL'
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship class 'connection__from_node' with object classes ('node', 'connection'): At least one of the object class ids of the relationship class 'connection__from_node' is not in the database.
+Could not import relationship with objects ('NOR', 'FIN_to_NOR') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_NOR__FIN_to_NOR'
+Could not import relationship with objects ('SWE', 'FIN_to_SWE') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_SWE__FIN_to_SWE'
+Could not import relationship with objects ('BAL', 'FIN_to_BAL') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_BAL__FIN_to_BAL'
+Could not import relationship with objects ('SWE', 'NOR_to_SWE') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_SWE__NOR_to_SWE'
+Could not import relationship with objects ('DEN', 'NOR_to_DEN') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_DEN__NOR_to_DEN'
+Could not import relationship with objects ('DEN', 'SWE_to_DEN') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_DEN__SWE_to_DEN'
+Could not import relationship with objects ('BAL', 'SWE_to_BAL') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_BAL__SWE_to_BAL'
+Could not import relationship with objects ('BAL', 'DEN_to_BAL') into 'connection__from_node': There is no object class id list for relationship 'connection__from_node_BAL__DEN_to_BAL'

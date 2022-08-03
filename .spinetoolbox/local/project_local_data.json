@@ -1,0 +1,46 @@
+{
+    "items": {
+        "Output Data Store": {
+            "url": {
+                "username": "",
+                "password": ""
+            }
+        },
+        "Data Connection GIS": {
+            "db_credentials": {}
+        },
+        "Data Store time series": {
+            "url": {
+                "username": "",
+                "password": ""
+            }
+        },
+        "Data Store time series rel": {
+            "url": {
+                "username": "",
+                "password": ""
+            }
+        },
+        "Data Connection Capacities": {
+            "db_credentials": {}
+        },
+        "Data Connection Model Parameters": {
+            "db_credentials": {}
+        },
+        "Main Input Data Store": {
+            "url": {
+                "username": "",
+                "password": ""
+            }
+        },
+        "Data Connection Gen Technologies": {
+            "db_credentials": {}
+        },
+        "Data Connection Demands": {
+            "db_credentials": {}
+        },
+        "Data Connection Hydro Inflow": {
+            "db_credentials": {}
+        }
+    }
+}

@@ -1,0 +1,42 @@
+Could not import relationship with objects ('BAL_biomass', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_biomass__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_brown-coal_lignite', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_brown-coal_lignite__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_gas-coal-derived', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_gas-coal-derived__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_gas', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_gas__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_hard-coal', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_hard-coal__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_oil', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_oil__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_oil-shale', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_oil-shale__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_peat', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_peat__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_geothermal', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_geothermal__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_hydro-pumped', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_hydro-pumped__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_hydro-ror', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_hydro-ror__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_hydro-reservoir', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_hydro-reservoir__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_marine', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_marine__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_nuclear', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_nuclear__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_other', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_other__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_other-ren', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_other-ren__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_solar', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_solar__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_waste', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_waste__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_wind-off', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_wind-off__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_wind-on', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_wind-on__fuel__BAL' are invalid.
+Could not import relationship with objects ('BAL_BACKUP', 'fuel', 'BAL') into 'unit__node__node': Some of the objects in relationship 'unit__node__node_BAL_BACKUP__fuel__BAL' are invalid.
+Could not import parameter value for '['BAL_biomass', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_brown-coal_lignite', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_gas-coal-derived', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_gas', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_hard-coal', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_oil', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_oil-shale', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_peat', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_geothermal', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_hydro-pumped', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_hydro-ror', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_hydro-reservoir', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_marine', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_nuclear', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_other', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_other-ren', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_solar', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_waste', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_wind-off', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_wind-on', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.
+Could not import parameter value for '['BAL_BACKUP', 'fuel', 'BAL']', class 'unit__node__node', parameter 'fix_ratio_out_in_unit_flow': Missing object or relationship identifier.

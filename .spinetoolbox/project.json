@@ -1,0 +1,811 @@
+{
+    "project": {
+        "version": 7,
+        "name": "EnergyModel",
+        "description": "",
+        "specifications": {
+            "Importer": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/nordpool_excel.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/a5_tutorial.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/gis_data.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/import_with_timeseries.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/gis_data_rel.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/import_with_timeseries_rel.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/capacities.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/generation_technologies.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/demand_importer.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/hydro_inflow_importer.json"
+                }
+            ],
+            "Exporter": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Exporter/add_index.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Exporter/add_index_rel.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Exporter/main_output.json"
+                }
+            ]
+        },
+        "connections": [
+            {
+                "name": "from Data Connection Model Parameters to Importer Model Parameters",
+                "from": [
+                    "Data Connection Model Parameters",
+                    "right"
+                ],
+                "to": [
+                    "Importer Model Parameters",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Load template to Main Input Data Store",
+                "from": [
+                    "Load template",
+                    "right"
+                ],
+                "to": [
+                    "Main Input Data Store",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Importer Model Parameters to Main Input Data Store",
+                "from": [
+                    "Importer Model Parameters",
+                    "right"
+                ],
+                "to": [
+                    "Main Input Data Store",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Data Connection GIS to Importer GIS",
+                "from": [
+                    "Data Connection GIS",
+                    "right"
+                ],
+                "to": [
+                    "Importer GIS",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Importer GIS to Data Store time series",
+                "from": [
+                    "Importer GIS",
+                    "right"
+                ],
+                "to": [
+                    "Data Store time series",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Data Store time series to Exporter with index",
+                "from": [
+                    "Data Store time series",
+                    "right"
+                ],
+                "to": [
+                    "Exporter with index",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Exporter with index to Importer GIS time series",
+                "from": [
+                    "Exporter with index",
+                    "right"
+                ],
+                "to": [
+                    "Importer GIS time series",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Importer GIS time series to Main Input Data Store",
+                "from": [
+                    "Importer GIS time series",
+                    "right"
+                ],
+                "to": [
+                    "Main Input Data Store",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Data Connection GIS to Importer GIS rel",
+                "from": [
+                    "Data Connection GIS",
+                    "bottom"
+                ],
+                "to": [
+                    "Importer GIS rel",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Importer GIS rel to Data Store time series rel",
+                "from": [
+                    "Importer GIS rel",
+                    "right"
+                ],
+                "to": [
+                    "Data Store time series rel",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Data Store time series rel to Exporter with index rel",
+                "from": [
+                    "Data Store time series rel",
+                    "right"
+                ],
+                "to": [
+                    "Exporter with index rel",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Exporter with index rel to Importer GIS time series rel",
+                "from": [
+                    "Exporter with index rel",
+                    "right"
+                ],
+                "to": [
+                    "Importer GIS time series rel",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Importer GIS time series rel to Main Input Data Store",
+                "from": [
+                    "Importer GIS time series rel",
+                    "right"
+                ],
+                "to": [
+                    "Main Input Data Store",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Data Connection Capacities to Importer Capacities",
+                "from": [
+                    "Data Connection Capacities",
+                    "right"
+                ],
+                "to": [
+                    "Importer Capacities",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Importer Capacities to Main Input Data Store",
+                "from": [
+                    "Importer Capacities",
+                    "right"
+                ],
+                "to": [
+                    "Main Input Data Store",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Run SpineOpt to Output Data Store",
+                "from": [
+                    "Run SpineOpt",
+                    "right"
+                ],
+                "to": [
+                    "Output Data Store",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Data Connection Gen Technologies to Importer Gen Technologies",
+                "from": [
+                    "Data Connection Gen Technologies",
+                    "right"
+                ],
+                "to": [
+                    "Importer Gen Technologies",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Importer Gen Technologies to Main Input Data Store",
+                "from": [
+                    "Importer Gen Technologies",
+                    "right"
+                ],
+                "to": [
+                    "Main Input Data Store",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Data Connection Demands to Importer Demands",
+                "from": [
+                    "Data Connection Demands",
+                    "right"
+                ],
+                "to": [
+                    "Importer Demands",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Main Input Data Store to Run SpineOpt",
+                "from": [
+                    "Main Input Data Store",
+                    "right"
+                ],
+                "to": [
+                    "Run SpineOpt",
+                    "left"
+                ],
+                "resource_filters": {
+                    "db_url@Main Input Data Store": {
+                        "tool_filter": [
+                            1
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "from Output Data Store to Exporter Output",
+                "from": [
+                    "Output Data Store",
+                    "right"
+                ],
+                "to": [
+                    "Exporter Output",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Data Connection Hydro Inflow to Importer Hydro Inflow",
+                "from": [
+                    "Data Connection Hydro Inflow",
+                    "right"
+                ],
+                "to": [
+                    "Importer Hydro Inflow",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Importer Hydro Inflow to Main Input Data Store",
+                "from": [
+                    "Importer Hydro Inflow",
+                    "right"
+                ],
+                "to": [
+                    "Main Input Data Store",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Importer Demands to Data Store time series",
+                "from": [
+                    "Importer Demands",
+                    "right"
+                ],
+                "to": [
+                    "Data Store time series",
+                    "left"
+                ]
+            }
+        ],
+        "jumps": []
+    },
+    "items": {
+        "Output Data Store": {
+            "type": "Data Store",
+            "description": "",
+            "x": 215.23977308883147,
+            "y": -172.98374900049004,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": "",
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/items/output_data_store/Output Data Store.sqlite"
+                }
+            }
+        },
+        "Exporter with index": {
+            "type": "Exporter",
+            "description": "",
+            "x": -771.901832227267,
+            "y": 385.8848581741701,
+            "output_time_stamps": false,
+            "cancel_on_error": true,
+            "output_labels": [
+                {
+                    "in_label": "db_url@Data Store time series",
+                    "out_label": "temp.xlsx"
+                }
+            ],
+            "specification": "add_index"
+        },
+        "Data Connection GIS": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -1301.3329537029933,
+            "y": 385.27721923955306,
+            "file_references": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/BAL.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/DEN.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/FIN.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/NOR.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/SWE.csv"
+                }
+            ],
+            "db_references": []
+        },
+        "Importer GIS": {
+            "type": "Importer",
+            "description": "",
+            "x": -1125.010899928587,
+            "y": 385.41499883731177,
+            "specification": "GIS data",
+            "cancel_on_error": false,
+            "purge_before_writing": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "<project>/model-data/global-energy-gis/BAL.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/DEN.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/FIN.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/NOR.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/SWE.csv",
+                    true
+                ]
+            ]
+        },
+        "Data Store time series": {
+            "type": "Data Store",
+            "description": "",
+            "x": -945.9656690114101,
+            "y": 385.9468792460523,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": "",
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/items/data_store_time_series/Data Store time series.sqlite"
+                }
+            }
+        },
+        "Importer GIS time series": {
+            "type": "Importer",
+            "description": "",
+            "x": -586.9587436055815,
+            "y": 385.96574922971007,
+            "specification": "import_with_timeseries",
+            "cancel_on_error": false,
+            "purge_before_writing": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "temp.xlsx",
+                    true
+                ]
+            ]
+        },
+        "Data Store time series rel": {
+            "type": "Data Store",
+            "description": "",
+            "x": -947.3019124847317,
+            "y": 568.1441303142303,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": "",
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/items/data_store_time_series_rel/Data Store time series rel.sqlite"
+                }
+            }
+        },
+        "Importer GIS rel": {
+            "type": "Importer",
+            "description": "",
+            "x": -1122.3421312790372,
+            "y": 567.8634854358411,
+            "specification": "GIS data rel",
+            "cancel_on_error": false,
+            "purge_before_writing": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "<project>/model-data/global-energy-gis/BAL.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/DEN.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/FIN.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/NOR.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/SWE.csv",
+                    true
+                ]
+            ]
+        },
+        "Exporter with index rel": {
+            "type": "Exporter",
+            "description": "",
+            "x": -771.5705973060988,
+            "y": 567.3396881220581,
+            "output_time_stamps": false,
+            "cancel_on_error": true,
+            "output_labels": [
+                {
+                    "in_label": "db_url@Data Store time series rel",
+                    "out_label": "temp_rel.xlsx"
+                }
+            ],
+            "specification": "add_index_rel"
+        },
+        "Importer GIS time series rel": {
+            "type": "Importer",
+            "description": "",
+            "x": -587.5964110763703,
+            "y": 567.6998540671627,
+            "specification": "import_with_timeseries_rel",
+            "cancel_on_error": false,
+            "purge_before_writing": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "temp_rel.xlsx",
+                    true
+                ]
+            ]
+        },
+        "Data Connection Capacities": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -1296.8921553904956,
+            "y": -177.1112729721504,
+            "file_references": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/all_capacities.xlsx"
+                }
+            ],
+            "db_references": []
+        },
+        "Importer Capacities": {
+            "type": "Importer",
+            "description": "",
+            "x": -577.7890235132796,
+            "y": -175.36955035212569,
+            "specification": "Capacities",
+            "cancel_on_error": false,
+            "purge_before_writing": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "<project>/model-data/all_capacities.xlsx",
+                    true
+                ]
+            ]
+        },
+        "Importer Model Parameters": {
+            "type": "Importer",
+            "description": "",
+            "x": -578.1128668886732,
+            "y": -350.96577735857994,
+            "specification": "Model parameters",
+            "cancel_on_error": false,
+            "purge_before_writing": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "<project>/model-data/model_parameters.xlsx",
+                    true
+                ]
+            ]
+        },
+        "Data Connection Model Parameters": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -1294.982002370965,
+            "y": -350.65632786285687,
+            "file_references": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/model_parameters.xlsx"
+                }
+            ],
+            "db_references": []
+        },
+        "Run SpineOpt": {
+            "type": "Tool",
+            "description": "",
+            "x": -17.55345560167279,
+            "y": -171.812018505364,
+            "specification": "Run SpineOpt",
+            "execute_in_work": false,
+            "cmd_line_args": [
+                {
+                    "type": "resource",
+                    "arg": "db_url@Main Input Data Store"
+                },
+                {
+                    "type": "resource",
+                    "arg": "db_url@Output Data Store"
+                }
+            ]
+        },
+        "Main Input Data Store": {
+            "type": "Data Store",
+            "description": "",
+            "x": -267.5254387776398,
+            "y": -173.66604177251577,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": "",
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/items/main_input_data_store/Main Input Data Store.sqlite"
+                }
+            }
+        },
+        "Load template": {
+            "type": "Tool",
+            "description": "",
+            "x": -577.97497735726,
+            "y": -707.4354902593097,
+            "specification": "Load template",
+            "execute_in_work": true,
+            "cmd_line_args": [
+                {
+                    "type": "resource",
+                    "arg": "db_url@Main Input Data Store"
+                }
+            ]
+        },
+        "Data Connection Gen Technologies": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -1295.953261963009,
+            "y": -527.2209372663157,
+            "file_references": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/gen_technology.xlsx"
+                }
+            ],
+            "db_references": []
+        },
+        "Importer Gen Technologies": {
+            "type": "Importer",
+            "description": "",
+            "x": -578.1599828500099,
+            "y": -524.1390315429101,
+            "specification": "Generation Technologies",
+            "cancel_on_error": false,
+            "purge_before_writing": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "<project>/model-data/gen_technology.xlsx",
+                    true
+                ]
+            ]
+        },
+        "Data Connection Demands": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -1303.5645603987448,
+            "y": 210.49028376678308,
+            "file_references": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/demands/demand-2018_denmark.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/demands/demand-2018_finland.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/demands/demand-2018_norway.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/demands/demand-2018_sweden.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/demands/demand-2018_baltics.csv"
+                }
+            ],
+            "db_references": []
+        },
+        "Importer Demands": {
+            "type": "Importer",
+            "description": "",
+            "x": -1124.2504420134117,
+            "y": 210.3492080416333,
+            "specification": "Demand Importer",
+            "cancel_on_error": false,
+            "purge_before_writing": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "<project>/model-data/demands/demand-2018_denmark.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/demands/demand-2018_finland.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/demands/demand-2018_norway.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/demands/demand-2018_sweden.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/demands/demand-2018_baltics.csv",
+                    true
+                ]
+            ]
+        },
+        "Exporter Output": {
+            "type": "Exporter",
+            "description": "",
+            "x": 437.33794965183444,
+            "y": -172.64484502327278,
+            "output_time_stamps": false,
+            "cancel_on_error": true,
+            "output_labels": [
+                {
+                    "in_label": "db_url@Output Data Store",
+                    "out_label": "main_output.csv"
+                }
+            ],
+            "specification": "Main Output"
+        },
+        "Data Connection Hydro Inflow": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -1297.3645128554544,
+            "y": 14.464441516257526,
+            "file_references": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/hydro_inflow.xlsx"
+                }
+            ],
+            "db_references": []
+        },
+        "Importer Hydro Inflow": {
+            "type": "Importer",
+            "description": "",
+            "x": -575.6490558535615,
+            "y": 14.98768698217973,
+            "specification": "Hydro Inflow Importer",
+            "cancel_on_error": false,
+            "purge_before_writing": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "<project>/model-data/hydro_inflow.xlsx",
+                    true
+                ]
+            ]
+        }
+    }
+}

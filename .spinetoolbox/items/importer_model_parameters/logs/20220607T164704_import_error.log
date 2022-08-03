@@ -1,0 +1,6 @@
+Could not import relationship class 'stochastic_structure__stochastic_scenario' with object classes ('stochastic_structure', 'stochastic_scenario'): At least one of the object class ids of the relationship class 'stochastic_structure__stochastic_scenario' is not in the database.
+Could not import relationship with objects ('deterministic', 'realization') into 'stochastic_structure__stochastic_scenario': There is no object class id list for relationship 'stochastic_structure__stochastic_scenario_deterministic__realization'
+Could not import relationship class 'model__temporal_block' with object classes ('model', 'temporal_block'): At least one of the object class ids of the relationship class 'model__temporal_block' is not in the database.
+Could not import relationship with objects ('instance', 'hourly') into 'model__temporal_block': There is no object class id list for relationship 'model__temporal_block_instance__hourly'
+Could not import relationship class 'model__default_temporal_block' with object classes ('model', 'temporal_block'): At least one of the object class ids of the relationship class 'model__default_temporal_block' is not in the database.
+Could not import relationship with objects ('instance', 'hourly') into 'model__default_temporal_block': There is no object class id list for relationship 'model__default_temporal_block_instance__hourly'

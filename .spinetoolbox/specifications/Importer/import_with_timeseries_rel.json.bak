@@ -1,0 +1,13 @@
+{
+    "name": "import_with_timeseries_rel",
+    "item_type": "Importer",
+    "mapping": {
+        "table_mappings": {},
+        "selected_tables": [],
+        "table_options": {},
+        "table_types": {},
+        "table_row_types": {},
+        "source_type": "ExcelConnector"
+    },
+    "description": ""
+}
