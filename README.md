@@ -4,7 +4,7 @@ An example for modeling **energy systems** and **capacity expansion** using *Spi
 
 The project contains a basic energy system that consists of five nodes representing the Baltic states, Denmark, Finland, Norway and Sweden.
 
-The project is authored by *Jiangyi Huang*, *Victor Oei* and *Fabricio Oliveira* in Systems Analysis Laboratory at Aalto University.
+The project is authored by [*Jiangyi Huang*](https://github.com/nnhjy), [*Victor Oei*](https://github.com/voei) and [*Prof. Fabricio Oliveira*](https://github.com/FabsOliveira) in Systems Analysis Laboratory at Aalto University.
 
 ## Usage
 To open and run the project, [*SpineOpt*](https://github.com/Spine-project/SpineOpt.jl) and [*SpineToolbox*](https://github.com/Spine-project/Spine-Toolbox) are required.
