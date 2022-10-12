@@ -1,6 +1,6 @@
 {
     "project": {
-        "version": 7,
+        "version": 8,
         "name": "EnergyModel",
         "description": "",
         "specifications": {
@@ -293,14 +293,7 @@
                 "to": [
                     "Run SpineOpt",
                     "left"
-                ],
-                "resource_filters": {
-                    "db_url@Main Input Data Store": {
-                        "tool_filter": [
-                            1
-                        ]
-                    }
-                }
+                ]
             },
             {
                 "name": "from Output Data Store to Exporter Output",
@@ -422,7 +415,6 @@
             "y": 385.41499883731177,
             "specification": "GIS data",
             "cancel_on_error": false,
-            "purge_before_writing": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
@@ -470,7 +462,6 @@
             "y": 385.96574922971007,
             "specification": "import_with_timeseries",
             "cancel_on_error": false,
-            "purge_before_writing": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
@@ -502,7 +493,6 @@
             "y": 567.8634854358411,
             "specification": "GIS data rel",
             "cancel_on_error": false,
-            "purge_before_writing": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
@@ -549,7 +539,6 @@
             "y": 567.6998540671627,
             "specification": "import_with_timeseries_rel",
             "cancel_on_error": false,
-            "purge_before_writing": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
@@ -579,7 +568,6 @@
             "y": -175.36955035212569,
             "specification": "Capacities",
             "cancel_on_error": false,
-            "purge_before_writing": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
@@ -595,7 +583,6 @@
             "y": -350.96577735857994,
             "specification": "Model parameters",
             "cancel_on_error": false,
-            "purge_before_writing": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
@@ -624,7 +611,7 @@
             "x": -17.55345560167279,
             "y": -171.812018505364,
             "specification": "Run SpineOpt",
-            "execute_in_work": false,
+            "execute_in_work": true,
             "cmd_line_args": [
                 {
                     "type": "resource",
@@ -658,7 +645,7 @@
             "x": -577.97497735726,
             "y": -707.4354902593097,
             "specification": "Load template",
-            "execute_in_work": true,
+            "execute_in_work": false,
             "cmd_line_args": [
                 {
                     "type": "resource",
@@ -687,7 +674,6 @@
             "y": -524.1390315429101,
             "specification": "Generation Technologies",
             "cancel_on_error": false,
-            "purge_before_writing": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
@@ -737,9 +723,12 @@
             "y": 210.3492080416333,
             "specification": "Demand Importer",
             "cancel_on_error": false,
-            "purge_before_writing": false,
             "on_conflict": "replace",
             "file_selection": [
+                [
+                    "<project>/model-data/demands/demand-2018_baltics.csv",
+                    true
+                ],
                 [
                     "<project>/model-data/demands/demand-2018_denmark.csv",
                     true
@@ -754,10 +743,6 @@
                 ],
                 [
                     "<project>/model-data/demands/demand-2018_sweden.csv",
-                    true
-                ],
-                [
-                    "<project>/model-data/demands/demand-2018_baltics.csv",
                     true
                 ]
             ]
@@ -798,7 +783,6 @@
             "y": 14.98768698217973,
             "specification": "Hydro Inflow Importer",
             "cancel_on_error": false,
-            "purge_before_writing": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
