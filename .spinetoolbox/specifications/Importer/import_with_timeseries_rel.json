@@ -53,7 +53,10 @@
                             {
                                 "map_type": "ParameterValueType",
                                 "position": "hidden",
-                                "value": "time_series"
+                                "value": "time_series",
+                                "options": {
+                                    "repeat": 2
+                                }
                             },
                             {
                                 "map_type": "IndexName",

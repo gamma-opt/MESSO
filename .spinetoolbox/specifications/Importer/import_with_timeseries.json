@@ -34,7 +34,10 @@
                             {
                                 "map_type": "ParameterValueType",
                                 "position": "hidden",
-                                "value": "time_series"
+                                "value": "time_series",
+                                "options": {
+                                    "repeat": 2
+                                }
                             },
                             {
                                 "map_type": "IndexName",
@@ -74,6 +77,7 @@
                 "5": "float"
             }
         },
+        "table_default_column_type": {},
         "table_row_types": {},
         "source_type": "ExcelConnector"
     },
