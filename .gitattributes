@@ -1,0 +1,1 @@
+.spinetoolbox/items/output_data_store/Output[[:space:]]Data[[:space:]]Store.sqlite filter=lfs diff=lfs merge=lfs -text

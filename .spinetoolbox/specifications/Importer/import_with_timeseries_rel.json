@@ -31,7 +31,8 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 5
+                                "position": 5,
+                                "import_objects": true
                             },
                             {
                                 "map_type": "RelationshipMetadata",
@@ -95,6 +96,7 @@
                 "8": "float"
             }
         },
+        "table_default_column_type": {},
         "table_row_types": {},
         "source_type": "ExcelConnector"
     },

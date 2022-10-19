@@ -72,6 +72,13 @@
                     "relative": true,
                     "path": ".spinetoolbox/specifications/Exporter/main_output.json"
                 }
+            ],
+            "Tool": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Tool/run_spineopt_gurobi.json"
+                }
             ]
         },
         "connections": [
@@ -610,7 +617,7 @@
             "description": "",
             "x": -17.55345560167279,
             "y": -171.812018505364,
-            "specification": "Run SpineOpt",
+            "specification": "Run_SpineOpt_Gurobi",
             "execute_in_work": true,
             "cmd_line_args": [
                 {
