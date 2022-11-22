@@ -1,7 +1,6 @@
 {
     "project": {
-        "version": 8,
-        "name": "EnergyModel",
+        "version": 9,
         "description": "",
         "specifications": {
             "Importer": [
