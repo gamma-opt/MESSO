@@ -2507,8 +2507,7 @@
                             },
                             {
                                 "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
+                                "position": 17
                             },
                             {
                                 "map_type": "ParameterValueMetadata",
@@ -2544,8 +2543,7 @@
                             },
                             {
                                 "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
+                                "position": 17
                             },
                             {
                                 "map_type": "ParameterValueMetadata",
@@ -2581,8 +2579,7 @@
                             },
                             {
                                 "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
+                                "position": 17
                             },
                             {
                                 "map_type": "ParameterValueMetadata",
@@ -2590,7 +2587,7 @@
                             },
                             {
                                 "map_type": "ParameterValue",
-                                "position": 6
+                                "position": 5
                             }
                         ]
                     }
@@ -2618,8 +2615,7 @@
                             },
                             {
                                 "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
+                                "position": 17
                             },
                             {
                                 "map_type": "ParameterValueMetadata",
@@ -2627,105 +2623,7 @@
                             },
                             {
                                 "map_type": "ParameterValue",
-                                "position": 8
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship parameter unit__from_node unit_capacity": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__from_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 1,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 2,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "unit_capacity"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 5
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship parameter unit__to_node": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__to_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 1,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
+                                "position": 7
                             }
                         ]
                     }
@@ -2784,8 +2682,7 @@
                             },
                             {
                                 "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
+                                "position": 17
                             },
                             {
                                 "map_type": "ParameterValueMetadata",
@@ -2793,7 +2690,7 @@
                             },
                             {
                                 "map_type": "ParameterValue",
-                                "position": 7
+                                "position": 6
                             }
                         ]
                     }
@@ -2845,8 +2742,7 @@
                             },
                             {
                                 "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
+                                "position": 17
                             },
                             {
                                 "map_type": "ParameterValueMetadata",
@@ -2854,7 +2750,7 @@
                             },
                             {
                                 "map_type": "ParameterValue",
-                                "position": 12
+                                "position": 11
                             }
                         ]
                     }
@@ -3066,7 +2962,9 @@
                 "14": "float",
                 "15": "float",
                 "16": "float",
-                "17": "float"
+                "17": "float",
+                "18": "string",
+                "19": "string"
             },
             "gen_technology DEN": {
                 "0": "string",
@@ -3152,17 +3050,17 @@
                 "4": "float",
                 "5": "float",
                 "6": "float",
-                "7": "float",
-                "8": "boolean",
+                "7": "boolean",
+                "8": "float",
                 "9": "float",
                 "10": "float",
                 "11": "float",
                 "12": "float",
                 "13": "float",
-                "14": "float",
-                "15": "duration",
+                "14": "duration",
+                "15": "float",
                 "16": "float",
-                "17": "float"
+                "17": "string"
             },
             "carbon_tax": {
                 "0": "string",
@@ -3170,6 +3068,7 @@
                 "2": "float"
             }
         },
+        "table_default_column_type": {},
         "table_row_types": {},
         "source_type": "ExcelConnector"
     },

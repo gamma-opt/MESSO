@@ -1,5 +1,5 @@
 {
-    "name": "Hydro Inflow Importer",
+    "name": "Hydro Reservoir Importer",
     "item_type": "Importer",
     "mapping": {
         "table_mappings": {
@@ -267,6 +267,7 @@
                 "2": "string"
             }
         },
+        "table_default_column_type": {},
         "table_row_types": {},
         "source_type": "ExcelConnector"
     },

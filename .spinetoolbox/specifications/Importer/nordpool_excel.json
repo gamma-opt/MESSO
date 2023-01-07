@@ -780,7 +780,165 @@
                     }
                 }
             ],
-            "main_model": [
+            "commodities": [
+                {
+                    "Commodity electricity": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "hidden",
+                                "value": "commodity"
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": "hidden",
+                                "value": "electricity"
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Commodity water": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "hidden",
+                                "value": "commodity"
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": "hidden",
+                                "value": "water"
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Relationship node__commodity": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "hidden",
+                                "value": "node__commodity"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 0
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 1
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 0,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 1,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "is_active": [
+                {
+                    "Object parameter is_active": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": 0
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 1
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 3
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 2
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 3
+                            }
+                        ]
+                    }
+                }
+            ],
+            "node_slack_penalty": [
+                {
+                    "Object parameter node_slack_penalty": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "header",
+                                "value": 0
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 0
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 1
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": "hidden",
+                                "value": "Base"
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 1
+                            }
+                        ]
+                    }
+                }
+            ],
+            "model_config": [
                 {
                     "Object model": {
                         "mapping": [
@@ -801,12 +959,32 @@
                     }
                 },
                 {
-                    "Object parameter model_start": {
+                    "Object model_start": {
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
                                 "position": "header",
-                                "value": 1
+                                "value": 1,
+                                "skip_columns": [
+                                    0,
+                                    1,
+                                    5,
+                                    6,
+                                    7,
+                                    8,
+                                    9,
+                                    10,
+                                    11,
+                                    12,
+                                    13,
+                                    14,
+                                    15,
+                                    16,
+                                    17,
+                                    18,
+                                    19,
+                                    20
+                                ]
                             },
                             {
                                 "map_type": "Object",
@@ -837,12 +1015,32 @@
                     }
                 },
                 {
-                    "Object parameter model_end": {
+                    "Object model_end": {
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
                                 "position": "header",
-                                "value": 1
+                                "value": 1,
+                                "skip_columns": [
+                                    0,
+                                    1,
+                                    5,
+                                    6,
+                                    7,
+                                    8,
+                                    9,
+                                    10,
+                                    11,
+                                    12,
+                                    13,
+                                    14,
+                                    15,
+                                    16,
+                                    17,
+                                    18,
+                                    19,
+                                    20
+                                ]
                             },
                             {
                                 "map_type": "Object",
@@ -873,16 +1071,72 @@
                     }
                 },
                 {
+                    "Object roll_forward": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "header",
+                                "value": 1,
+                                "skip_columns": [
+                                    0,
+                                    1,
+                                    5,
+                                    6,
+                                    7,
+                                    8,
+                                    9,
+                                    10,
+                                    11,
+                                    12,
+                                    13,
+                                    14,
+                                    15,
+                                    16,
+                                    17,
+                                    18,
+                                    19,
+                                    20
+                                ]
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 1
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 4
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 0
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 4
+                            }
+                        ]
+                    }
+                },
+                {
                     "Object stochastic_structure": {
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
                                 "position": "header",
-                                "value": 4
+                                "value": 5
                             },
                             {
                                 "map_type": "Object",
-                                "position": 4
+                                "position": 5
                             },
                             {
                                 "map_type": "ObjectMetadata",
@@ -897,7 +1151,7 @@
                             {
                                 "map_type": "RelationshipClass",
                                 "position": "header",
-                                "value": 5
+                                "value": 6
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
@@ -907,7 +1161,7 @@
                             {
                                 "map_type": "RelationshipClassObjectClass",
                                 "position": "header",
-                                "value": 4
+                                "value": 5
                             },
                             {
                                 "map_type": "Relationship",
@@ -921,7 +1175,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 4,
+                                "position": 5,
                                 "import_objects": true
                             },
                             {
@@ -937,7 +1191,7 @@
                             {
                                 "map_type": "RelationshipClass",
                                 "position": "header",
-                                "value": 6
+                                "value": 7
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
@@ -947,7 +1201,7 @@
                             {
                                 "map_type": "RelationshipClassObjectClass",
                                 "position": "header",
-                                "value": 4
+                                "value": 5
                             },
                             {
                                 "map_type": "Relationship",
@@ -961,7 +1215,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 4,
+                                "position": 5,
                                 "import_objects": true
                             },
                             {
@@ -977,17 +1231,17 @@
                             {
                                 "map_type": "RelationshipClass",
                                 "position": "header",
+                                "value": 9
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 5
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
                                 "value": 8
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "header",
-                                "value": 4
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "header",
-                                "value": 7
                             },
                             {
                                 "map_type": "Relationship",
@@ -996,12 +1250,12 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 4,
+                                "position": 5,
                                 "import_objects": true
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 7,
+                                "position": 8,
                                 "import_objects": true
                             },
                             {
@@ -1017,7 +1271,7 @@
                             {
                                 "map_type": "RelationshipClass",
                                 "position": "header",
-                                "value": 11
+                                "value": 15
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
@@ -1027,7 +1281,7 @@
                             {
                                 "map_type": "RelationshipClassObjectClass",
                                 "position": "header",
-                                "value": 9
+                                "value": 10
                             },
                             {
                                 "map_type": "Relationship",
@@ -1041,7 +1295,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 9,
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -1057,7 +1311,7 @@
                             {
                                 "map_type": "RelationshipClass",
                                 "position": "header",
-                                "value": 12
+                                "value": 16
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
@@ -1067,7 +1321,7 @@
                             {
                                 "map_type": "RelationshipClassObjectClass",
                                 "position": "header",
-                                "value": 9
+                                "value": 10
                             },
                             {
                                 "map_type": "Relationship",
@@ -1081,7 +1335,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 9,
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -1097,11 +1351,11 @@
                             {
                                 "map_type": "ObjectClass",
                                 "position": "header",
-                                "value": 7
+                                "value": 8
                             },
                             {
                                 "map_type": "Object",
-                                "position": 7
+                                "position": 8
                             },
                             {
                                 "map_type": "ObjectMetadata",
@@ -1116,11 +1370,11 @@
                             {
                                 "map_type": "ObjectClass",
                                 "position": "header",
-                                "value": 9
+                                "value": 10
                             },
                             {
                                 "map_type": "Object",
-                                "position": 9
+                                "position": 10
                             },
                             {
                                 "map_type": "ObjectMetadata",
@@ -1130,16 +1384,35 @@
                     }
                 },
                 {
-                    "Object parameter resolution": {
+                    "Object temporal_block parameters": {
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
                                 "position": "header",
-                                "value": 9
+                                "value": 10,
+                                "skip_columns": [
+                                    0,
+                                    1,
+                                    2,
+                                    3,
+                                    4,
+                                    5,
+                                    6,
+                                    7,
+                                    8,
+                                    9,
+                                    10,
+                                    15,
+                                    16,
+                                    17,
+                                    18,
+                                    19,
+                                    20
+                                ]
                             },
                             {
                                 "map_type": "Object",
-                                "position": 9
+                                "position": 10
                             },
                             {
                                 "map_type": "ObjectMetadata",
@@ -1147,8 +1420,7 @@
                             },
                             {
                                 "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 10
+                                "position": "header"
                             },
                             {
                                 "map_type": "Alternative",
@@ -1171,11 +1443,11 @@
                             {
                                 "map_type": "ObjectClass",
                                 "position": "header",
-                                "value": 13
+                                "value": 17
                             },
                             {
                                 "map_type": "Object",
-                                "position": 13
+                                "position": 17
                             },
                             {
                                 "map_type": "ObjectMetadata",
@@ -1190,7 +1462,7 @@
                             {
                                 "map_type": "RelationshipClass",
                                 "position": "header",
-                                "value": 14
+                                "value": 18
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
@@ -1200,7 +1472,7 @@
                             {
                                 "map_type": "RelationshipClassObjectClass",
                                 "position": "header",
-                                "value": 13
+                                "value": 17
                             },
                             {
                                 "map_type": "Relationship",
@@ -1214,7 +1486,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 13,
+                                "position": 17,
                                 "import_objects": true
                             },
                             {
@@ -1303,120 +1575,22 @@
                     }
                 },
                 {
-                    "Object parameter roll_forward": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 1
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 1
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 15
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": 0
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 15
-                            }
-                        ]
-                    }
-                }
-            ],
-            "commodities": [
-                {
-                    "Commodity electricity": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "hidden",
-                                "value": "commodity"
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": "hidden",
-                                "value": "electricity"
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Commodity fuel": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "hidden",
-                                "value": "commodity"
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": "hidden",
-                                "value": "fuel"
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Commodity water": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "hidden",
-                                "value": "commodity"
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": "hidden",
-                                "value": "fuel"
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship node__commodity": {
+                    "Relationship report__output": {
                         "mapping": [
                             {
                                 "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "node__commodity"
+                                "position": "header",
+                                "value": 20
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
                                 "position": "header",
-                                "value": 0
+                                "value": 17
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
                                 "position": "header",
-                                "value": 1
+                                "value": 19
                             },
                             {
                                 "map_type": "Relationship",
@@ -1425,135 +1599,17 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 0,
+                                "position": 17,
                                 "import_objects": true
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 1,
+                                "position": 19,
                                 "import_objects": true
                             },
                             {
                                 "map_type": "RelationshipMetadata",
                                 "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship unit__commodity fuel": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "node__commodity"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "commodity"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "is_active": [
-                {
-                    "Object parameter is_active": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": 0
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 1
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 3
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": 2
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 3
-                            }
-                        ]
-                    }
-                }
-            ],
-            "node_slack_penalty": [
-                {
-                    "Object parameter node_slack_penalty": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 0
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 0
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 1
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 1
                             }
                         ]
                     }
@@ -1562,18 +1618,15 @@
         },
         "selected_tables": [
             "transmission",
-            "main_model",
             "commodities",
-            "node_slack_penalty"
+            "node_slack_penalty",
+            "model_config"
         ],
         "table_options": {
             "transmission": {
                 "has_header": false,
                 "encoding": "utf-8",
                 "row": 0,
-                "header": true
-            },
-            "main_model": {
                 "header": true
             },
             "commodities": {
@@ -1586,6 +1639,9 @@
                 "header": true
             },
             "node_slack_penalty": {
+                "header": true
+            },
+            "model_config": {
                 "header": true
             }
         },
@@ -1609,24 +1665,6 @@
                 "15": "float",
                 "16": "float"
             },
-            "main_model": {
-                "0": "string",
-                "1": "string",
-                "2": "datetime",
-                "3": "datetime",
-                "4": "string",
-                "5": "string",
-                "6": "string",
-                "7": "string",
-                "8": "string",
-                "9": "string",
-                "10": "duration",
-                "11": "string",
-                "12": "string",
-                "13": "string",
-                "14": "string",
-                "15": "duration"
-            },
             "commodities": {
                 "0": "string",
                 "1": "string"
@@ -1640,8 +1678,32 @@
             "node_slack_penalty": {
                 "0": "string",
                 "1": "float"
+            },
+            "model_config": {
+                "0": "string",
+                "1": "string",
+                "2": "datetime",
+                "3": "datetime",
+                "4": "duration",
+                "5": "string",
+                "6": "string",
+                "7": "string",
+                "8": "string",
+                "9": "string",
+                "10": "string",
+                "11": "duration",
+                "12": "duration",
+                "13": "duration",
+                "14": "boolean",
+                "15": "string",
+                "16": "string",
+                "17": "string",
+                "18": "string",
+                "19": "string",
+                "20": "string"
             }
         },
+        "table_default_column_type": {},
         "table_row_types": {},
         "source_type": "ExcelConnector"
     },

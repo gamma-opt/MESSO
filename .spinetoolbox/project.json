@@ -12,11 +12,6 @@
                 {
                     "type": "path",
                     "relative": true,
-                    "path": ".spinetoolbox/specifications/Importer/a5_tutorial.json"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
                     "path": ".spinetoolbox/specifications/Importer/gis_data.json"
                 },
                 {
@@ -53,6 +48,11 @@
                     "type": "path",
                     "relative": true,
                     "path": ".spinetoolbox/specifications/Importer/hydro_inflow_importer.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/ramping_data_importer_a.json"
                 }
             ],
             "Exporter": [
@@ -89,17 +89,6 @@
                 ],
                 "to": [
                     "Importer Model Parameters",
-                    "left"
-                ]
-            },
-            {
-                "name": "from Load template to Main Input Data Store",
-                "from": [
-                    "Load template",
-                    "right"
-                ],
-                "to": [
-                    "Main Input Data Store",
                     "left"
                 ]
             },
@@ -170,20 +159,20 @@
                 ]
             },
             {
-                "name": "from Data Connection GIS to Importer GIS rel",
+                "name": "from Data Connection GIS to Importer GIS hydro-ror",
                 "from": [
                     "Data Connection GIS",
                     "bottom"
                 ],
                 "to": [
-                    "Importer GIS rel",
+                    "Importer GIS hydro-ror",
                     "left"
                 ]
             },
             {
-                "name": "from Importer GIS rel to Data Store time series rel",
+                "name": "from Importer GIS hydro-ror to Data Store time series rel",
                 "from": [
-                    "Importer GIS rel",
+                    "Importer GIS hydro-ror",
                     "right"
                 ],
                 "to": [
@@ -303,7 +292,8 @@
                 "disabled_filters": {
                     "db_url@Main Input Data Store": {
                         "scenario_filter": [
-                            "one_shot_solve"
+                            "RollingSchedule",
+                            "RollingScheduleRamp1"
                         ]
                     }
                 }
@@ -320,20 +310,20 @@
                 ]
             },
             {
-                "name": "from Data Connection Hydro Inflow to Importer Hydro Inflow",
+                "name": "from Data Connection Hydro Reservoir to Importer Hydro Reservoir",
                 "from": [
-                    "Data Connection Hydro Inflow",
+                    "Data Connection Hydro Reservoir",
                     "right"
                 ],
                 "to": [
-                    "Importer Hydro Inflow",
+                    "Importer Hydro Reservoir",
                     "left"
                 ]
             },
             {
-                "name": "from Importer Hydro Inflow to Main Input Data Store",
+                "name": "from Importer Hydro Reservoir to Main Input Data Store",
                 "from": [
-                    "Importer Hydro Inflow",
+                    "Importer Hydro Reservoir",
                     "right"
                 ],
                 "to": [
@@ -349,6 +339,39 @@
                 ],
                 "to": [
                     "Data Store time series",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Load template to Main Input Data Store",
+                "from": [
+                    "Load template",
+                    "left"
+                ],
+                "to": [
+                    "Main Input Data Store",
+                    "bottom"
+                ]
+            },
+            {
+                "name": "from Data Connection Ramping to Importer Ramp Data",
+                "from": [
+                    "Data Connection Ramping",
+                    "right"
+                ],
+                "to": [
+                    "Importer Ramp Data",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Importer Ramp Data to Main Input Data Store",
+                "from": [
+                    "Importer Ramp Data",
+                    "right"
+                ],
+                "to": [
+                    "Main Input Data Store",
                     "left"
                 ]
             }
@@ -390,7 +413,7 @@
         "Data Connection GIS": {
             "type": "Data Connection",
             "description": "",
-            "x": -1301.3329537029933,
+            "x": -1299.943534378932,
             "y": 385.27721923955306,
             "file_references": [
                 {
@@ -417,6 +440,11 @@
                     "type": "path",
                     "relative": true,
                     "path": "model-data/global-energy-gis/SWE.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/hydro-ror.xlsx"
                 }
             ],
             "db_references": []
@@ -449,6 +477,10 @@
                 [
                     "<project>/model-data/global-energy-gis/SWE.csv",
                     true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/hydro-ror.xlsx",
+                    false
                 ]
             ]
         },
@@ -486,8 +518,8 @@
         "Data Store time series rel": {
             "type": "Data Store",
             "description": "",
-            "x": -947.3019124847317,
-            "y": 568.1441303142303,
+            "x": -952.8595897809765,
+            "y": 569.5335496382913,
             "url": {
                 "dialect": "sqlite",
                 "host": "",
@@ -498,37 +530,6 @@
                     "path": ".spinetoolbox/items/data_store_time_series_rel/Data Store time series rel.sqlite"
                 }
             }
-        },
-        "Importer GIS rel": {
-            "type": "Importer",
-            "description": "",
-            "x": -1122.3421312790372,
-            "y": 567.8634854358411,
-            "specification": "GIS data rel",
-            "cancel_on_error": false,
-            "on_conflict": "replace",
-            "file_selection": [
-                [
-                    "<project>/model-data/global-energy-gis/BAL.csv",
-                    true
-                ],
-                [
-                    "<project>/model-data/global-energy-gis/DEN.csv",
-                    true
-                ],
-                [
-                    "<project>/model-data/global-energy-gis/FIN.csv",
-                    true
-                ],
-                [
-                    "<project>/model-data/global-energy-gis/NOR.csv",
-                    true
-                ],
-                [
-                    "<project>/model-data/global-energy-gis/SWE.csv",
-                    true
-                ]
-            ]
         },
         "Exporter with index rel": {
             "type": "Exporter",
@@ -563,8 +564,8 @@
         "Data Connection Capacities": {
             "type": "Data Connection",
             "description": "",
-            "x": -1296.8921553904956,
-            "y": -177.1112729721504,
+            "x": -1318.6532111683923,
+            "y": -233.19176337503325,
             "file_references": [
                 {
                     "type": "path",
@@ -577,8 +578,8 @@
         "Importer Capacities": {
             "type": "Importer",
             "description": "",
-            "x": -577.7890235132796,
-            "y": -175.36955035212569,
+            "x": -590.7549602812359,
+            "y": -234.2025722549726,
             "specification": "Capacities",
             "cancel_on_error": false,
             "on_conflict": "replace",
@@ -592,8 +593,8 @@
         "Importer Model Parameters": {
             "type": "Importer",
             "description": "",
-            "x": -578.1128668886732,
-            "y": -350.96577735857994,
+            "x": -586.8640429191106,
+            "y": -495.8130646621672,
             "specification": "Model parameters",
             "cancel_on_error": false,
             "on_conflict": "replace",
@@ -607,8 +608,8 @@
         "Data Connection Model Parameters": {
             "type": "Data Connection",
             "description": "",
-            "x": -1294.982002370965,
-            "y": -350.65632786285687,
+            "x": -1318.7379247198057,
+            "y": -500.2139837648102,
             "file_references": [
                 {
                     "type": "path",
@@ -639,8 +640,8 @@
         "Main Input Data Store": {
             "type": "Data Store",
             "description": "",
-            "x": -267.5254387776398,
-            "y": -173.66604177251577,
+            "x": -268.90689439964734,
+            "y": -173.92319146024298,
             "url": {
                 "dialect": "sqlite",
                 "host": "",
@@ -655,8 +656,8 @@
         "Load template": {
             "type": "Tool",
             "description": "",
-            "x": -577.97497735726,
-            "y": -707.4354902593097,
+            "x": -19.782710168586807,
+            "y": 73.59242509559263,
             "specification": "Load template",
             "execute_in_work": false,
             "cmd_line_args": [
@@ -669,8 +670,8 @@
         "Data Connection Gen Technologies": {
             "type": "Data Connection",
             "description": "",
-            "x": -1295.953261963009,
-            "y": -527.2209372663157,
+            "x": -1316.646526750057,
+            "y": -378.2754798334222,
             "file_references": [
                 {
                     "type": "path",
@@ -683,8 +684,8 @@
         "Importer Gen Technologies": {
             "type": "Importer",
             "description": "",
-            "x": -578.1599828500099,
-            "y": -524.1390315429101,
+            "x": -587.9419565648732,
+            "y": -376.1645309920011,
             "specification": "Generation Technologies",
             "cancel_on_error": false,
             "on_conflict": "replace",
@@ -775,31 +776,95 @@
             ],
             "specification": "Main Output"
         },
-        "Data Connection Hydro Inflow": {
+        "Data Connection Ramping": {
             "type": "Data Connection",
             "description": "",
-            "x": -1297.3645128554544,
-            "y": 14.464441516257526,
+            "x": -1313.1264921827783,
+            "y": 56.41882973963976,
             "file_references": [
                 {
                     "type": "path",
                     "relative": true,
-                    "path": "model-data/hydro_inflow.xlsx"
+                    "path": "model-data/ramping_detail.xlsx"
                 }
             ],
             "db_references": []
         },
-        "Importer Hydro Inflow": {
+        "Importer Ramp Data": {
             "type": "Importer",
             "description": "",
-            "x": -575.6490558535615,
-            "y": 14.98768698217973,
-            "specification": "Hydro Inflow Importer",
+            "x": -585.4520211010736,
+            "y": 60.91424307221459,
+            "specification": "Ramping data Importer",
+            "cancel_on_error": true,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "<project>/model-data/ramping_detail.xlsx",
+                    true
+                ]
+            ]
+        },
+        "Importer Hydro Reservoir": {
+            "type": "Importer",
+            "description": "",
+            "x": -590.6952116285005,
+            "y": -106.70060332144021,
+            "specification": "Hydro Reservoir Importer",
             "cancel_on_error": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
-                    "<project>/model-data/hydro_inflow.xlsx",
+                    "<project>/model-data/hydro_reservoir.xlsx",
+                    true
+                ]
+            ]
+        },
+        "Data Connection Hydro Reservoir": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -1317.1640664613603,
+            "y": -107.13158284436406,
+            "file_references": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/hydro_reservoir.xlsx"
+                }
+            ],
+            "db_references": []
+        },
+        "Importer GIS hydro-ror": {
+            "type": "Importer",
+            "description": "",
+            "x": -1125.1209699271594,
+            "y": 569.2529047599025,
+            "specification": "GIS data hydro-ror",
+            "cancel_on_error": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "<project>/model-data/global-energy-gis/BAL.csv",
+                    false
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/DEN.csv",
+                    false
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/FIN.csv",
+                    false
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/NOR.csv",
+                    false
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/SWE.csv",
+                    false
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/hydro-ror.xlsx",
                     true
                 ]
             ]

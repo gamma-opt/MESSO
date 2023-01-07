@@ -55,7 +55,7 @@
                                 "position": "hidden",
                                 "value": "time_series",
                                 "options": {
-                                    "repeat": 2
+                                    "repeat": true
                                 }
                             },
                             {

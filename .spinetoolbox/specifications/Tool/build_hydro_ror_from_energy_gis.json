@@ -1,0 +1,14 @@
+{
+    "name": "Hydro-ror_inflow",
+    "tooltype": "julia",
+    "includes": [
+        "build_hydro_ror_inflow.jl"
+    ],
+    "description": "Build hydro ror inflow from energy GIS data",
+    "inputfiles": [],
+    "inputfiles_opt": [],
+    "outputfiles": [],
+    "cmdline_args": [],
+    "execute_in_work": true,
+    "includes_main_path": "../../../scripts"
+}

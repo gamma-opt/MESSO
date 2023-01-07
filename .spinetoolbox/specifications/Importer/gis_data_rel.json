@@ -1,11 +1,31 @@
 {
-    "name": "GIS data rel",
+    "name": "GIS data hydro-ror",
     "item_type": "Importer",
     "mapping": {
         "table_mappings": {
-            "data": [
+            "info": [
                 {
-                    "Hydror_in rel time series": {
+                    "Mapping 1": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "inflow": [
+                {
+                    "relationship unit__to_node unit_capacity": {
                         "mapping": [
                             {
                                 "map_type": "RelationshipClass",
@@ -29,14 +49,12 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 5,
+                                "position": -1,
                                 "import_objects": true
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
+                                "position": -2,
                                 "import_objects": true
                             },
                             {
@@ -50,8 +68,7 @@
                             },
                             {
                                 "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
+                                "position": -3
                             },
                             {
                                 "map_type": "ParameterValueMetadata",
@@ -73,7 +90,7 @@
                             },
                             {
                                 "map_type": "ExpandedValue",
-                                "position": 5
+                                "position": "hidden"
                             }
                         ]
                     }
@@ -81,30 +98,40 @@
             ]
         },
         "selected_tables": [
-            "data"
+            "inflow"
         ],
         "table_options": {
-            "data": {
-                "encoding": "ascii",
-                "delimiter": ",",
-                "quotechar": "\"",
-                "skip": 0,
-                "has_header": true
-            }
+            "info": {},
+            "inflow": {}
         },
         "table_types": {
-            "data": {
+            "info": {
                 "0": "string",
                 "1": "string",
-                "2": "string",
-                "3": "string",
+                "2": "string"
+            },
+            "inflow": {
+                "0": "float",
+                "1": "float",
+                "2": "float",
+                "3": "float",
                 "4": "float",
                 "5": "float",
-                "6": "string"
+                "6": "float",
+                "7": "float",
+                "8": "float",
+                "9": "float"
             }
         },
-        "table_row_types": {},
-        "source_type": "CSVConnector"
+        "table_default_column_type": {},
+        "table_row_types": {
+            "inflow": {
+                "0": "string",
+                "1": "string",
+                "2": "string"
+            }
+        },
+        "source_type": "ExcelConnector"
     },
-    "description": ""
+    "description": "map hydro-ror inflow as unit_capacity"
 }
