@@ -42,7 +42,10 @@
                             {
                                 "map_type": "ParameterValueType",
                                 "position": "hidden",
-                                "value": "time_series"
+                                "value": "time_series",
+                                "options": {
+                                    "repeat": true
+                                }
                             },
                             {
                                 "map_type": "IndexName",
@@ -54,13 +57,13 @@
                             },
                             {
                                 "map_type": "ExpandedValue",
-                                "position": 2
+                                "position": 1
                             }
                         ]
                     }
                 },
                 {
-                    "Object parameter fix_node_state hydro reservoir": {
+                    "Object parameter fix_node_state": {
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
@@ -78,8 +81,8 @@
                             },
                             {
                                 "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "fix_node_state"
+                                "position": "header",
+                                "value": 2
                             },
                             {
                                 "map_type": "Alternative",
@@ -93,7 +96,10 @@
                             {
                                 "map_type": "ParameterValueType",
                                 "position": "hidden",
-                                "value": "time_series"
+                                "value": "time_series",
+                                "options": {
+                                    "repeat": true
+                                }
                             },
                             {
                                 "map_type": "IndexName",
@@ -105,7 +111,7 @@
                             },
                             {
                                 "map_type": "ExpandedValue",
-                                "position": 1
+                                "position": 2
                             }
                         ]
                     }
@@ -146,7 +152,10 @@
                             {
                                 "map_type": "ParameterValueType",
                                 "position": "hidden",
-                                "value": "time_series"
+                                "value": "time_series",
+                                "options": {
+                                    "repeat": true
+                                }
                             },
                             {
                                 "map_type": "IndexName",
@@ -158,13 +167,13 @@
                             },
                             {
                                 "map_type": "ExpandedValue",
-                                "position": 2
+                                "position": 1
                             }
                         ]
                     }
                 },
                 {
-                    "Object parameter fix_node_state hydro reservoir": {
+                    "Object parameter fix_node_state": {
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
@@ -182,8 +191,8 @@
                             },
                             {
                                 "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "fix_node_state"
+                                "position": "header",
+                                "value": 2
                             },
                             {
                                 "map_type": "Alternative",
@@ -197,7 +206,10 @@
                             {
                                 "map_type": "ParameterValueType",
                                 "position": "hidden",
-                                "value": "time_series"
+                                "value": "time_series",
+                                "options": {
+                                    "repeat": true
+                                }
                             },
                             {
                                 "map_type": "IndexName",
@@ -209,7 +221,7 @@
                             },
                             {
                                 "map_type": "ExpandedValue",
-                                "position": 1
+                                "position": 2
                             }
                         ]
                     }

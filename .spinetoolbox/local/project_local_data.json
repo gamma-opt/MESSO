@@ -39,7 +39,10 @@
         "Data Connection Demands": {
             "db_credentials": {}
         },
-        "Data Connection Hydro Inflow": {
+        "Data Connection Ramping": {
+            "db_credentials": {}
+        },
+        "Data Connection Hydro Reservoir": {
             "db_credentials": {}
         }
     }

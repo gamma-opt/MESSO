@@ -5,19 +5,39 @@
         "table_mappings": {
             "gen_technology": [
                 {
-                    "Mapping 1": {
+                    "Object parameter balance_type for fuel nodes": {
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
-                                "position": "hidden"
+                                "position": "hidden",
+                                "value": "node"
                             },
                             {
                                 "map_type": "Object",
-                                "position": "hidden"
+                                "position": 9
                             },
                             {
                                 "map_type": "ObjectMetadata",
                                 "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "balance_type"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": "hidden",
+                                "value": "Base"
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "\"balance_type_none\""
                             }
                         ]
                     }
@@ -175,8 +195,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -200,65 +219,6 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": 7
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship unit__from_node vom_cost": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__from_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "vom_cost"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 6
                             }
                         ]
                     }
@@ -304,8 +264,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -329,65 +288,6 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": 8
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship unit__to_node fuel_cost": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__to_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "fuel_cost"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 7
                             }
                         ]
                     }
@@ -533,8 +433,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -544,7 +443,7 @@
                             {
                                 "map_type": "ParameterDefinition",
                                 "position": "hidden",
-                                "value": "fix_ratio_out_out_unit_flow"
+                                "value": "fix_ratio_out_in_unit_flow"
                             },
                             {
                                 "map_type": "Alternative",
@@ -565,124 +464,6 @@
             ],
             "gen_technology DEN": [
                 {
-                    "Relationship unit__to_node fuel_cost": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__to_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "fuel_cost"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 7
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship unit__from_node vom_cost": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__from_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "vom_cost"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 6
-                            }
-                        ]
-                    }
-                },
-                {
                     "Relationship unit__to_node vom_cost": {
                         "mapping": [
                             {
@@ -782,8 +563,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -902,8 +682,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -1013,8 +792,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -1024,7 +802,7 @@
                             {
                                 "map_type": "ParameterDefinition",
                                 "position": "hidden",
-                                "value": "fix_ratio_out_out_unit_flow"
+                                "value": "fix_ratio_out_in_unit_flow"
                             },
                             {
                                 "map_type": "Alternative",
@@ -1045,124 +823,6 @@
             ],
             "gen_technology FIN": [
                 {
-                    "Relationship unit__to_node fuel_cost": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__to_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "fuel_cost"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 7
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship unit__from_node vom_cost": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__from_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "vom_cost"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 6
-                            }
-                        ]
-                    }
-                },
-                {
                     "Relationship unit__to_node vom_cost": {
                         "mapping": [
                             {
@@ -1262,8 +922,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -1382,8 +1041,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -1493,8 +1151,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -1504,7 +1161,7 @@
                             {
                                 "map_type": "ParameterDefinition",
                                 "position": "hidden",
-                                "value": "fix_ratio_out_out_unit_flow"
+                                "value": "fix_ratio_out_in_unit_flow"
                             },
                             {
                                 "map_type": "Alternative",
@@ -1525,124 +1182,6 @@
             ],
             "gen_technology NOR": [
                 {
-                    "Relationship unit__to_node fuel_cost": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__to_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "fuel_cost"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 7
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship unit__from_node vom_cost": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__from_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "vom_cost"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 6
-                            }
-                        ]
-                    }
-                },
-                {
                     "Relationship unit__to_node vom_cost": {
                         "mapping": [
                             {
@@ -1742,8 +1281,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -1862,8 +1400,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -1973,8 +1510,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -1984,7 +1520,7 @@
                             {
                                 "map_type": "ParameterDefinition",
                                 "position": "hidden",
-                                "value": "fix_ratio_out_out_unit_flow"
+                                "value": "fix_ratio_out_in_unit_flow"
                             },
                             {
                                 "map_type": "Alternative",
@@ -2005,124 +1541,6 @@
             ],
             "gen_technology SWE": [
                 {
-                    "Relationship unit__to_node fuel_cost": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__to_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "fuel_cost"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 7
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship unit__from_node vom_cost": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__from_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "unit"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "vom_cost"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 6
-                            }
-                        ]
-                    }
-                },
-                {
                     "Relationship unit__to_node vom_cost": {
                         "mapping": [
                             {
@@ -2222,8 +1640,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -2342,8 +1759,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "hidden",
-                                "value": "fuel",
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -2453,8 +1869,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": "header",
-                                "value": 0,
+                                "position": 10,
                                 "import_objects": true
                             },
                             {
@@ -2464,7 +1879,7 @@
                             {
                                 "map_type": "ParameterDefinition",
                                 "position": "hidden",
-                                "value": "fix_ratio_out_out_unit_flow"
+                                "value": "fix_ratio_out_in_unit_flow"
                             },
                             {
                                 "map_type": "Alternative",
@@ -2754,28 +2169,49 @@
                             }
                         ]
                     }
-                }
-            ],
-            "carbon_tax": [
+                },
                 {
-                    "Objects emission nodes": {
+                    "Relationship unit__from_node": {
                         "mapping": [
                             {
-                                "map_type": "ObjectClass",
+                                "map_type": "RelationshipClass",
                                 "position": "hidden",
-                                "value": "node"
+                                "value": "unit__from_node"
                             },
                             {
-                                "map_type": "Object",
-                                "position": 1
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 1
                             },
                             {
-                                "map_type": "ObjectMetadata",
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 2
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 1,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
                                 "position": "hidden"
                             }
                         ]
                     }
-                },
+                }
+            ],
+            "carbon_tax": [
                 {
                     "Object parameter tax emissions": {
                         "mapping": [
@@ -2814,7 +2250,7 @@
                     }
                 },
                 {
-                    "Object parameter has_state": {
+                    "Object parameter balance_type": {
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
@@ -2832,7 +2268,7 @@
                             {
                                 "map_type": "ParameterDefinition",
                                 "position": "hidden",
-                                "value": "has_state"
+                                "value": "balance_type"
                             },
                             {
                                 "map_type": "Alternative",
@@ -2846,45 +2282,7 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": "hidden",
-                                "value": "true"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object parameter state_coeff": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 1
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "state_coeff"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": "hidden",
-                                "value": "1"
+                                "value": "\"balance_type_none\""
                             }
                         ]
                     }
@@ -2892,6 +2290,7 @@
             ]
         },
         "selected_tables": [
+            "gen_technology",
             "gen_technology BAL",
             "gen_technology DEN",
             "gen_technology FIN",
@@ -2901,7 +2300,10 @@
             "carbon_tax"
         ],
         "table_options": {
-            "gen_technology": {},
+            "gen_technology": {
+                "header": true,
+                "read_until_row": true
+            },
             "capital_cost": {},
             "OM_cost": {},
             "efficiency": {},
@@ -2922,10 +2324,13 @@
             },
             "hydro_reservoir": {
                 "has_header": false,
-                "header": true
+                "header": true,
+                "read_until_row": true
             },
             "carbon_tax": {
-                "header": true
+                "header": true,
+                "read_until_col": true,
+                "read_until_row": true
             }
         },
         "table_types": {
@@ -2942,7 +2347,12 @@
                 "9": "string",
                 "10": "string",
                 "11": "string",
-                "12": "string"
+                "12": "string",
+                "13": "string",
+                "14": "string",
+                "15": "string",
+                "16": "string",
+                "17": "string"
             },
             "gen_technology BAL": {
                 "0": "string",
@@ -2955,16 +2365,15 @@
                 "7": "float",
                 "8": "float",
                 "9": "float",
-                "10": "float",
+                "10": "string",
                 "11": "duration",
                 "12": "float",
-                "13": "float",
+                "13": "duration",
                 "14": "float",
                 "15": "float",
                 "16": "float",
                 "17": "float",
-                "18": "string",
-                "19": "string"
+                "18": "string"
             },
             "gen_technology DEN": {
                 "0": "string",
@@ -2977,13 +2386,15 @@
                 "7": "float",
                 "8": "float",
                 "9": "float",
-                "10": "float",
+                "10": "string",
                 "11": "duration",
                 "12": "float",
-                "13": "float",
+                "13": "duration",
                 "14": "float",
                 "15": "float",
-                "16": "float"
+                "16": "float",
+                "17": "string",
+                "18": "string"
             },
             "gen_technology FIN": {
                 "0": "string",
@@ -2996,13 +2407,15 @@
                 "7": "float",
                 "8": "float",
                 "9": "float",
-                "10": "float",
+                "10": "string",
                 "11": "duration",
                 "12": "float",
-                "13": "float",
+                "13": "duration",
                 "14": "float",
                 "15": "float",
-                "16": "float"
+                "16": "float",
+                "17": "string",
+                "18": "string"
             },
             "gen_technology NOR": {
                 "0": "string",
@@ -3015,13 +2428,15 @@
                 "7": "float",
                 "8": "float",
                 "9": "float",
-                "10": "float",
+                "10": "string",
                 "11": "duration",
                 "12": "float",
-                "13": "float",
+                "13": "duration",
                 "14": "float",
                 "15": "float",
-                "16": "float"
+                "16": "float",
+                "17": "string",
+                "18": "string"
             },
             "gen_technology SWE": {
                 "0": "string",
@@ -3034,13 +2449,15 @@
                 "7": "float",
                 "8": "float",
                 "9": "float",
-                "10": "float",
+                "10": "string",
                 "11": "duration",
                 "12": "float",
-                "13": "float",
+                "13": "duration",
                 "14": "float",
                 "15": "float",
-                "16": "float"
+                "16": "float",
+                "17": "string",
+                "18": "string"
             },
             "hydro_reservoir": {
                 "0": "string",
@@ -3057,9 +2474,9 @@
                 "11": "float",
                 "12": "float",
                 "13": "float",
-                "14": "duration",
+                "14": "float",
                 "15": "float",
-                "16": "float",
+                "16": "duration",
                 "17": "string"
             },
             "carbon_tax": {

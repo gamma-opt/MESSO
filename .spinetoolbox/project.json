@@ -1,6 +1,6 @@
 {
     "project": {
-        "version": 9,
+        "version": 10,
         "description": "",
         "specifications": {
             "Importer": [
@@ -289,13 +289,16 @@
                     "Run SpineOpt",
                     "left"
                 ],
-                "disabled_filters": {
-                    "db_url@Main Input Data Store": {
-                        "scenario_filter": [
-                            "RollingSchedule",
-                            "RollingScheduleRamp1"
-                        ]
-                    }
+                "filter_settings": {
+                    "known_filters": {
+                        "db_url@Main Input Data Store": {
+                            "scenario_filter": {},
+                            "tool_filter": {
+                                "object_activity_control": true
+                            }
+                        }
+                    },
+                    "auto_online": true
                 }
             },
             {
@@ -307,7 +310,22 @@
                 "to": [
                     "Exporter Output",
                     "left"
-                ]
+                ],
+                "filter_settings": {
+                    "known_filters": {
+                        "db_url@Output Data Store": {
+                            "scenario_filter": {
+                                "GlobalSolveLP": true,
+                                "RollingScheduleLP_NoSource_1block_NotWork": true,
+                                "RollingScheduleLP_NoSource_2blocks_NotWork": true,
+                                "RollingScheduleLP_WithoutSource_Work": true,
+                                "RollingSolveLP": true
+                            },
+                            "tool_filter": {}
+                        }
+                    },
+                    "auto_online": true
+                }
             },
             {
                 "name": "from Data Connection Hydro Reservoir to Importer Hydro Reservoir",
@@ -623,7 +641,7 @@
             "type": "Tool",
             "description": "",
             "x": -17.55345560167279,
-            "y": -171.812018505364,
+            "y": -173.23446986376646,
             "specification": "Run_SpineOpt_Gurobi",
             "execute_in_work": true,
             "cmd_line_args": [
@@ -640,8 +658,8 @@
         "Main Input Data Store": {
             "type": "Data Store",
             "description": "",
-            "x": -268.90689439964734,
-            "y": -173.92319146024298,
+            "x": -268.9068943996474,
+            "y": -175.36582394882518,
             "url": {
                 "dialect": "sqlite",
                 "host": "",
@@ -670,8 +688,8 @@
         "Data Connection Gen Technologies": {
             "type": "Data Connection",
             "description": "",
-            "x": -1316.646526750057,
-            "y": -378.2754798334222,
+            "x": -1316.6465267500569,
+            "y": -380.5820593801743,
             "file_references": [
                 {
                     "type": "path",

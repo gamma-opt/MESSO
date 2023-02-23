@@ -782,46 +782,6 @@
             ],
             "commodities": [
                 {
-                    "Commodity electricity": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "hidden",
-                                "value": "commodity"
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": "hidden",
-                                "value": "electricity"
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Commodity water": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "hidden",
-                                "value": "commodity"
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": "hidden",
-                                "value": "water"
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
                     "Relationship node__commodity": {
                         "mapping": [
                             {
@@ -933,6 +893,64 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Relationship parameter cyclic_condition": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "hidden",
+                                "value": "node__temporal_block"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 0
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 2
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 0,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 3
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": "hidden",
+                                "value": "Base"
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 3
                             }
                         ]
                     }
@@ -1497,84 +1515,6 @@
                     }
                 },
                 {
-                    "Object parameter fuel has_state": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": "hidden",
-                                "value": "fuel"
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "has_state"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": "hidden",
-                                "value": "true"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object parameter fuel state_coeff": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": "hidden",
-                                "value": "fuel"
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "state_coeff"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": "hidden",
-                                "value": "1"
-                            }
-                        ]
-                    }
-                },
-                {
                     "Relationship report__output": {
                         "mapping": [
                             {
@@ -1614,13 +1554,37 @@
                         ]
                     }
                 }
+            ],
+            "scenarios": [
+                {
+                    "scanarios": {
+                        "mapping": [
+                            {
+                                "map_type": "Scenario",
+                                "position": "header",
+                                "skip_columns": [
+                                    0
+                                ]
+                            },
+                            {
+                                "map_type": "ScenarioAlternative",
+                                "position": 0
+                            },
+                            {
+                                "map_type": "ScenarioBeforeAlternative",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                }
             ]
         },
         "selected_tables": [
             "transmission",
             "commodities",
             "node_slack_penalty",
-            "model_config"
+            "model_config",
+            "scenarios"
         ],
         "table_options": {
             "transmission": {
@@ -1642,6 +1606,9 @@
                 "header": true
             },
             "model_config": {
+                "header": true
+            },
+            "scenarios": {
                 "header": true
             }
         },
@@ -1677,7 +1644,9 @@
             },
             "node_slack_penalty": {
                 "0": "string",
-                "1": "float"
+                "1": "float",
+                "2": "string",
+                "3": "float"
             },
             "model_config": {
                 "0": "string",
@@ -1701,10 +1670,25 @@
                 "18": "string",
                 "19": "string",
                 "20": "string"
+            },
+            "scenarios": {
+                "0": "string",
+                "1": "string",
+                "2": "string",
+                "3": "string",
+                "4": "string",
+                "5": "string",
+                "6": "string",
+                "7": "string",
+                "8": "string"
             }
         },
         "table_default_column_type": {},
-        "table_row_types": {},
+        "table_row_types": {
+            "scenarios": {
+                "0": "string"
+            }
+        },
         "source_type": "ExcelConnector"
     },
     "description": ""
