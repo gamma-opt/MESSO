@@ -1,5 +1,5 @@
 {
-    "name": "Ramping data Importer",
+    "name": "Ramping data",
     "item_type": "Importer",
     "mapping": {
         "table_mappings": {

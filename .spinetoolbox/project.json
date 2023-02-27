@@ -7,11 +7,6 @@
                 {
                     "type": "path",
                     "relative": true,
-                    "path": ".spinetoolbox/specifications/Importer/nordpool_excel.json"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
                     "path": ".spinetoolbox/specifications/Importer/gis_data.json"
                 },
                 {
@@ -52,7 +47,12 @@
                 {
                     "type": "path",
                     "relative": true,
-                    "path": ".spinetoolbox/specifications/Importer/ramping_data_importer_a.json"
+                    "path": ".spinetoolbox/specifications/Importer/model_mappings.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/ramping_data.json"
                 }
             ],
             "Exporter": [
@@ -294,13 +294,13 @@
                         "db_url@Main Input Data Store": {
                             "scenario_filter": {
                                 "GlobalSolveLP": true,
-                                "GlobalSolveMIP": true,
-                                "GlobalSolveRampOptLP": true,
-                                "GlobalSolveRampOptMIP": true,
-                                "RollingScheduleLP": true,
-                                "RollingScheduleMIP": true,
-                                "RollingScheduleRampOptLP": true,
-                                "RollingScheduleRampOptMIP": true
+                                "GlobalSolveMIP": false,
+                                "GlobalSolveRampOptLP": false,
+                                "GlobalSolveRampOptMIP": false,
+                                "RollingScheduleLP": false,
+                                "RollingScheduleMIP": false,
+                                "RollingScheduleRampOptLP": false,
+                                "RollingScheduleRampOptMIP": false
                             },
                             "tool_filter": {
                                 "object_activity_control": true
@@ -622,7 +622,7 @@
             "description": "",
             "x": -586.8640429191106,
             "y": -495.8130646621672,
-            "specification": "Model parameters",
+            "specification": "Model mappings",
             "cancel_on_error": false,
             "on_conflict": "replace",
             "file_selection": [
@@ -667,8 +667,8 @@
         "Main Input Data Store": {
             "type": "Data Store",
             "description": "",
-            "x": -268.9068943996474,
-            "y": -175.36582394882518,
+            "x": -270.97739605110365,
+            "y": -175.3658239488252,
             "url": {
                 "dialect": "sqlite",
                 "host": "",
@@ -822,7 +822,7 @@
             "description": "",
             "x": -585.4520211010736,
             "y": 60.91424307221459,
-            "specification": "Ramping data Importer",
+            "specification": "Ramping data",
             "cancel_on_error": true,
             "on_conflict": "replace",
             "file_selection": [
