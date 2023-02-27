@@ -1225,7 +1225,11 @@
                                     13,
                                     14,
                                     15,
-                                    16
+                                    16,
+                                    17,
+                                    18,
+                                    19,
+                                    20
                                 ]
                             },
                             {
@@ -1256,81 +1260,37 @@
                     }
                 },
                 {
-                    "Relationship unit__to_node generator": {
+                    "Object parameter online_variable_type": {
                         "mapping": [
                             {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__to_node"
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
+                                "map_type": "ObjectClass",
                                 "position": "header",
                                 "value": 1
                             },
                             {
-                                "map_type": "RelationshipClassObjectClass",
+                                "map_type": "Object",
+                                "position": 1
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
                                 "position": "header",
                                 "value": 0
                             },
                             {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
+                                "map_type": "Alternative",
+                                "position": 16
                             },
                             {
-                                "map_type": "RelationshipObject",
-                                "position": 1,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
+                                "map_type": "ParameterValueMetadata",
                                 "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship unit__from_node pump": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "hidden",
-                                "value": "unit__from_node"
                             },
                             {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "header",
-                                "value": 1
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "header",
-                                "value": 0
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 1,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 0,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
+                                "map_type": "ParameterValue",
+                                "position": 15
                             }
                         ]
                     }
@@ -1685,7 +1645,11 @@
                                     13,
                                     14,
                                     15,
-                                    16
+                                    16,
+                                    17,
+                                    18,
+                                    19,
+                                    20
                                 ]
                             },
                             {
@@ -1738,7 +1702,11 @@
                                     13,
                                     14,
                                     15,
-                                    16
+                                    16,
+                                    17,
+                                    18,
+                                    19,
+                                    20
                                 ]
                             },
                             {
@@ -1811,7 +1779,12 @@
                                     11,
                                     12,
                                     13,
-                                    16
+                                    15,
+                                    16,
+                                    17,
+                                    18,
+                                    19,
+                                    20
                                 ]
                             },
                             {
@@ -1858,6 +1831,78 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": 11
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Object unit inactive": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "header",
+                                "value": 1
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 1
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 8
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 18
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 17
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Object node inactive storage": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "header",
+                                "value": 2
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 2
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 8
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 18
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 17
                             }
                         ]
                     }
@@ -1982,8 +2027,12 @@
                 "12": "float",
                 "13": "float",
                 "14": "float",
-                "15": "float",
-                "16": "float"
+                "15": "string",
+                "16": "string",
+                "17": "boolean",
+                "18": "string",
+                "19": "string",
+                "20": "string"
             }
         },
         "table_default_column_type": {},

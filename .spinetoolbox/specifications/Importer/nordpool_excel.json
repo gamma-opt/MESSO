@@ -958,26 +958,7 @@
             ],
             "model_config": [
                 {
-                    "Object model": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 1
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 1
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object model_start": {
+                    "Object model parameters": {
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
@@ -994,14 +975,7 @@
                                     10,
                                     11,
                                     12,
-                                    13,
-                                    14,
-                                    15,
-                                    16,
-                                    17,
-                                    18,
-                                    19,
-                                    20
+                                    13
                                 ]
                             },
                             {
@@ -1014,8 +988,7 @@
                             },
                             {
                                 "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 2
+                                "position": "header"
                             },
                             {
                                 "map_type": "Alternative",
@@ -1033,143 +1006,12 @@
                     }
                 },
                 {
-                    "Object model_end": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 1,
-                                "skip_columns": [
-                                    0,
-                                    1,
-                                    5,
-                                    6,
-                                    7,
-                                    8,
-                                    9,
-                                    10,
-                                    11,
-                                    12,
-                                    13,
-                                    14,
-                                    15,
-                                    16,
-                                    17,
-                                    18,
-                                    19,
-                                    20
-                                ]
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 1
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 3
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": 0
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 3
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object roll_forward": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 1,
-                                "skip_columns": [
-                                    0,
-                                    1,
-                                    5,
-                                    6,
-                                    7,
-                                    8,
-                                    9,
-                                    10,
-                                    11,
-                                    12,
-                                    13,
-                                    14,
-                                    15,
-                                    16,
-                                    17,
-                                    18,
-                                    19,
-                                    20
-                                ]
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 1
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 4
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": 0
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 4
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object stochastic_structure": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 5
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 5
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
                     "Relationship model__stochastic_structure": {
                         "mapping": [
                             {
                                 "map_type": "RelationshipClass",
-                                "position": "header",
-                                "value": 6
+                                "position": "hidden",
+                                "value": "model__stochastic_structure"
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
@@ -1208,8 +1050,8 @@
                         "mapping": [
                             {
                                 "map_type": "RelationshipClass",
-                                "position": "header",
-                                "value": 7
+                                "position": "hidden",
+                                "value": "model__default_stochastic_structure"
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
@@ -1244,12 +1086,12 @@
                     }
                 },
                 {
-                    "Relationship stochastic_structure stochastic_scenario": {
+                    "Relationship stochastic_structure__stochastic_scenario": {
                         "mapping": [
                             {
                                 "map_type": "RelationshipClass",
-                                "position": "header",
-                                "value": 9
+                                "position": "hidden",
+                                "value": "stochastic_structure__stochastic_scenario"
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
@@ -1259,7 +1101,7 @@
                             {
                                 "map_type": "RelationshipClassObjectClass",
                                 "position": "header",
-                                "value": 8
+                                "value": 6
                             },
                             {
                                 "map_type": "Relationship",
@@ -1273,7 +1115,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 8,
+                                "position": 6,
                                 "import_objects": true
                             },
                             {
@@ -1288,8 +1130,8 @@
                         "mapping": [
                             {
                                 "map_type": "RelationshipClass",
-                                "position": "header",
-                                "value": 15
+                                "position": "hidden",
+                                "value": "model__temporal_block"
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
@@ -1299,7 +1141,7 @@
                             {
                                 "map_type": "RelationshipClassObjectClass",
                                 "position": "header",
-                                "value": 10
+                                "value": 7
                             },
                             {
                                 "map_type": "Relationship",
@@ -1313,7 +1155,7 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 10,
+                                "position": 7,
                                 "import_objects": true
                             },
                             {
@@ -1328,8 +1170,8 @@
                         "mapping": [
                             {
                                 "map_type": "RelationshipClass",
-                                "position": "header",
-                                "value": 16
+                                "position": "hidden",
+                                "value": "model__default_temporal_block"
                             },
                             {
                                 "map_type": "RelationshipClassObjectClass",
@@ -1339,7 +1181,7 @@
                             {
                                 "map_type": "RelationshipClassObjectClass",
                                 "position": "header",
-                                "value": 10
+                                "value": 7
                             },
                             {
                                 "map_type": "Relationship",
@@ -1353,49 +1195,11 @@
                             },
                             {
                                 "map_type": "RelationshipObject",
-                                "position": 10,
+                                "position": 7,
                                 "import_objects": true
                             },
                             {
                                 "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object stochastic_scenario": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 8
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 8
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object temporal_block": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 10
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 10
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
                                 "position": "hidden"
                             }
                         ]
@@ -1407,7 +1211,7 @@
                             {
                                 "map_type": "ObjectClass",
                                 "position": "header",
-                                "value": 10,
+                                "value": 7,
                                 "skip_columns": [
                                     0,
                                     1,
@@ -1416,21 +1220,12 @@
                                     4,
                                     5,
                                     6,
-                                    7,
-                                    8,
-                                    9,
-                                    10,
-                                    15,
-                                    16,
-                                    17,
-                                    18,
-                                    19,
-                                    20
+                                    7
                                 ]
                             },
                             {
                                 "map_type": "Object",
-                                "position": 10
+                                "position": 7
                             },
                             {
                                 "map_type": "ObjectMetadata",
@@ -1451,105 +1246,6 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": 10
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object report": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 17
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 17
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship model__report": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "header",
-                                "value": 18
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "header",
-                                "value": 1
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "header",
-                                "value": 17
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 1,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 17,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Relationship report__output": {
-                        "mapping": [
-                            {
-                                "map_type": "RelationshipClass",
-                                "position": "header",
-                                "value": 20
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "header",
-                                "value": 17
-                            },
-                            {
-                                "map_type": "RelationshipClassObjectClass",
-                                "position": "header",
-                                "value": 19
-                            },
-                            {
-                                "map_type": "Relationship",
-                                "position": "hidden",
-                                "value": "relationship"
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 17,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipObject",
-                                "position": 19,
-                                "import_objects": true
-                            },
-                            {
-                                "map_type": "RelationshipMetadata",
-                                "position": "hidden"
                             }
                         ]
                     }
@@ -1577,6 +1273,88 @@
                         ]
                     }
                 }
+            ],
+            "model_output": [
+                {
+                    "Relationship model__report": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "hidden",
+                                "value": "model__report"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 0
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 1
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 0,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 1,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Relationship report__output": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "hidden",
+                                "value": "report__output"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 1
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "header",
+                                "value": 2
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 1,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                }
             ]
         },
         "selected_tables": [
@@ -1584,7 +1362,8 @@
             "commodities",
             "node_slack_penalty",
             "model_config",
-            "scenarios"
+            "scenarios",
+            "model_output"
         ],
         "table_options": {
             "transmission": {
@@ -1609,6 +1388,9 @@
                 "header": true
             },
             "scenarios": {
+                "header": true
+            },
+            "model_output": {
                 "header": true
             }
         },
@@ -1657,19 +1439,10 @@
                 "5": "string",
                 "6": "string",
                 "7": "string",
-                "8": "string",
-                "9": "string",
-                "10": "string",
-                "11": "duration",
-                "12": "duration",
-                "13": "duration",
-                "14": "boolean",
-                "15": "string",
-                "16": "string",
-                "17": "string",
-                "18": "string",
-                "19": "string",
-                "20": "string"
+                "8": "duration",
+                "9": "duration",
+                "10": "duration",
+                "11": "boolean"
             },
             "scenarios": {
                 "0": "string",
@@ -1681,6 +1454,11 @@
                 "6": "string",
                 "7": "string",
                 "8": "string"
+            },
+            "model_output": {
+                "0": "string",
+                "1": "string",
+                "2": "string"
             }
         },
         "table_default_column_type": {},

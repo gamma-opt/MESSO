@@ -292,7 +292,16 @@
                 "filter_settings": {
                     "known_filters": {
                         "db_url@Main Input Data Store": {
-                            "scenario_filter": {},
+                            "scenario_filter": {
+                                "GlobalSolveLP": true,
+                                "GlobalSolveMIP": true,
+                                "GlobalSolveRampOptLP": true,
+                                "GlobalSolveRampOptMIP": true,
+                                "RollingScheduleLP": true,
+                                "RollingScheduleMIP": true,
+                                "RollingScheduleRampOptLP": true,
+                                "RollingScheduleRampOptMIP": true
+                            },
                             "tool_filter": {
                                 "object_activity_control": true
                             }
