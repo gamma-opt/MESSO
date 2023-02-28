@@ -3,6 +3,7 @@
 logs/
 *.log
 output/
+samples/
 *.bak*
 .spinetoolbox/items/
 .spinetoolbox/local/
