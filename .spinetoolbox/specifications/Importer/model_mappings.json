@@ -1158,6 +1158,52 @@
                     }
                 },
                 {
+                    "Object model parameters": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "header",
+                                "value": 1,
+                                "skip_columns": [
+                                    0,
+                                    1,
+                                    5,
+                                    6,
+                                    7,
+                                    8,
+                                    9,
+                                    10,
+                                    11
+                                ]
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 1
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 0
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                },
+                {
                     "Object temporal_block parameters": {
                         "mapping": [
                             {
@@ -1197,157 +1243,7 @@
                             },
                             {
                                 "map_type": "ParameterValue",
-                                "position": 10
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object model parameter model_start": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 1,
-                                "skip_columns": [
-                                    0,
-                                    1,
-                                    2,
-                                    3,
-                                    4,
-                                    5,
-                                    6,
-                                    7,
-                                    8,
-                                    9,
-                                    10,
-                                    11
-                                ]
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 1
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
                                 "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "model_start"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": 0
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 2
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object model parameter model_end": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 1,
-                                "skip_columns": [
-                                    0,
-                                    1,
-                                    2,
-                                    3,
-                                    4,
-                                    5,
-                                    6,
-                                    7,
-                                    8,
-                                    9,
-                                    10,
-                                    11
-                                ]
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 1
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "model_end"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": 0
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 3
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object model parameter roll_forward": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 1,
-                                "skip_columns": [
-                                    0,
-                                    1,
-                                    2,
-                                    3,
-                                    4,
-                                    5,
-                                    6,
-                                    7,
-                                    8,
-                                    9,
-                                    10,
-                                    11
-                                ]
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": 1
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "hidden",
-                                "value": "roll_forward"
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": 0
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValue",
-                                "position": 4
                             }
                         ]
                     }
@@ -1367,10 +1263,6 @@
                             {
                                 "map_type": "ScenarioAlternative",
                                 "position": 0
-                            },
-                            {
-                                "map_type": "ScenarioBeforeAlternative",
-                                "position": "hidden"
                             }
                         ]
                     }

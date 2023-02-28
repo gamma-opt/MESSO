@@ -1278,7 +1278,7 @@
                             {
                                 "map_type": "ParameterDefinition",
                                 "position": "header",
-                                "value": 0
+                                "value": 15
                             },
                             {
                                 "map_type": "Alternative",
@@ -1680,7 +1680,7 @@
                     }
                 },
                 {
-                    "Relationship unit__to_node other parameters for generator ": {
+                    "Relationship parameter minimum_operating_point for generator unit__to_node": {
                         "mapping": [
                             {
                                 "map_type": "RelationshipClass",
@@ -1740,7 +1740,8 @@
                             },
                             {
                                 "map_type": "ParameterDefinition",
-                                "position": "header"
+                                "position": "hidden",
+                                "value": "minimum_operating_point"
                             },
                             {
                                 "map_type": "Alternative",
@@ -1758,7 +1759,7 @@
                     }
                 },
                 {
-                    "Relationship unit__from_node other parameters for pump": {
+                    "Relationship parameter minimum_operating_point for pump unit__from_node": {
                         "mapping": [
                             {
                                 "map_type": "RelationshipClass",
@@ -1818,7 +1819,8 @@
                             },
                             {
                                 "map_type": "ParameterDefinition",
-                                "position": "header"
+                                "position": "hidden",
+                                "value": "minimum_operating_point"
                             },
                             {
                                 "map_type": "Alternative",
@@ -1830,7 +1832,7 @@
                             },
                             {
                                 "map_type": "ParameterValue",
-                                "position": 11
+                                "position": 14
                             }
                         ]
                     }
@@ -1840,8 +1842,8 @@
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 1
+                                "position": "hidden",
+                                "value": "unit"
                             },
                             {
                                 "map_type": "Object",
@@ -1853,8 +1855,8 @@
                             },
                             {
                                 "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 8
+                                "position": "hidden",
+                                "value": "is_active"
                             },
                             {
                                 "map_type": "Alternative",
@@ -1876,8 +1878,8 @@
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
-                                "position": "header",
-                                "value": 0
+                                "position": "hidden",
+                                "value": "node"
                             },
                             {
                                 "map_type": "Object",
@@ -1889,8 +1891,8 @@
                             },
                             {
                                 "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 8
+                                "position": "hidden",
+                                "value": "is_active"
                             },
                             {
                                 "map_type": "Alternative",
@@ -2031,8 +2033,8 @@
                 "16": "string",
                 "17": "boolean",
                 "18": "string",
-                "19": "string",
-                "20": "string"
+                "19": "float",
+                "20": "float"
             }
         },
         "table_default_column_type": {},
