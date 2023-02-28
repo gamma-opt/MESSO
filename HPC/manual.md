@@ -30,9 +30,9 @@ In Julia REPL
 ```Julia
 julia> ] activate .
 (NordPool-MESSO) pkg> add SpineInterface#master
-# (NordPool-MESSO) pkg> add https://github.com/Spine-tools/SpineInterface.jl.git
+# (NordPool-MESSO) pkg> add https://github.com/Spine-tools/SpineInterface.jl.git#commitSHA
 (NordPool-MESSO) pkg> add SpineOpt#master
-# (NordPool-MESSO) pkg> add https://github.com/Spine-tools/SpineOpt.jl.git
+# (NordPool-MESSO) pkg> add https://github.com/Spine-tools/SpineOpt.jl.git#commitSHA
 (NordPool-MESSO) pkg> add JuMP
 (NordPool-MESSO) pkg> add Gurobi
 (NordPool-MESSO) pkg> build Gurobi  # config the gurobi to avoid license inconsistency
@@ -46,6 +46,7 @@ Pkg.add(url="https://github.com/Spine-tools/SpineOpt.jl.git", rev="master")
 Pkg.add("JuMP")
 Pkg.add("Gurobi"); Pkg.build("Gurobi")
 ```
+See [`Pkg doc`](https://pkgdocs.julialang.org/v1/managing-packages/) for options to install specific version/branch/commit.
 - 2.3 Install `spinedb_api`
 Under the directory of the built Julia environment, call Julia REPL and activate the environment
 ```Julia
