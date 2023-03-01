@@ -94,8 +94,8 @@ Under the directory of the built Julia environment, call Julia REPL and activate
     In Julia REPL
     ```Julia
     julia> ] activate .
-    (SpineOpt) pkg> add ./SpineOpt.jl
-    (SpineOpt) pkg> add ./SpineInterface.jl
+    (SpineOpt) pkg> add /cluster/home/jiahuang/Tools/SpineOpt/SpineInterface.jl
+    (SpineOpt) pkg> add /cluster/home/jiahuang/Tools/SpineOpt/SpineOpt.jl
     ```
     Install cloned `spinedb-api`
     ```console
