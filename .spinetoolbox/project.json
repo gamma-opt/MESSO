@@ -17,16 +17,6 @@
                 {
                     "type": "path",
                     "relative": true,
-                    "path": ".spinetoolbox/specifications/Importer/gis_data_rel.json"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
-                    "path": ".spinetoolbox/specifications/Importer/import_with_timeseries_rel.json"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
                     "path": ".spinetoolbox/specifications/Importer/capacities.json"
                 },
                 {
@@ -53,6 +43,11 @@
                     "type": "path",
                     "relative": true,
                     "path": ".spinetoolbox/specifications/Importer/ramping_data.json"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/specifications/Importer/hydro-ror_time_series.json"
                 }
             ],
             "Exporter": [
@@ -60,11 +55,6 @@
                     "type": "path",
                     "relative": true,
                     "path": ".spinetoolbox/specifications/Exporter/add_index.json"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
-                    "path": ".spinetoolbox/specifications/Exporter/add_index_rel.json"
                 },
                 {
                     "type": "path",
@@ -159,53 +149,53 @@
                 ]
             },
             {
-                "name": "from Data Connection GIS to Importer GIS hydro-ror",
+                "name": "from Data Connection GIS to Importer inflow pattern hydro-ror",
                 "from": [
                     "Data Connection GIS",
                     "bottom"
                 ],
                 "to": [
-                    "Importer GIS hydro-ror",
+                    "Importer inflow pattern hydro-ror",
                     "left"
                 ]
             },
             {
-                "name": "from Importer GIS hydro-ror to Data Store time series rel",
+                "name": "from Importer inflow pattern hydro-ror to Data Store time series hydro-ror",
                 "from": [
-                    "Importer GIS hydro-ror",
+                    "Importer inflow pattern hydro-ror",
                     "right"
                 ],
                 "to": [
-                    "Data Store time series rel",
+                    "Data Store time series hydro-ror",
                     "left"
                 ]
             },
             {
-                "name": "from Data Store time series rel to Exporter with index rel",
+                "name": "from Data Store time series hydro-ror to Exporter with index hydro-ror",
                 "from": [
-                    "Data Store time series rel",
+                    "Data Store time series hydro-ror",
                     "right"
                 ],
                 "to": [
-                    "Exporter with index rel",
+                    "Exporter with index hydro-ror",
                     "left"
                 ]
             },
             {
-                "name": "from Exporter with index rel to Importer GIS time series rel",
+                "name": "from Exporter with index hydro-ror to Importer hydro-ror time series",
                 "from": [
-                    "Exporter with index rel",
+                    "Exporter with index hydro-ror",
                     "right"
                 ],
                 "to": [
-                    "Importer GIS time series rel",
+                    "Importer hydro-ror time series",
                     "left"
                 ]
             },
             {
-                "name": "from Importer GIS time series rel to Main Input Data Store",
+                "name": "from Importer hydro-ror time series to Main Input Data Store",
                 "from": [
-                    "Importer GIS time series rel",
+                    "Importer hydro-ror time series",
                     "right"
                 ],
                 "to": [
@@ -440,7 +430,7 @@
         "Data Connection GIS": {
             "type": "Data Connection",
             "description": "",
-            "x": -1299.943534378932,
+            "x": -1302.015323575148,
             "y": 385.27721923955306,
             "file_references": [
                 {
@@ -538,52 +528,6 @@
             "file_selection": [
                 [
                     "temp.xlsx",
-                    true
-                ]
-            ]
-        },
-        "Data Store time series rel": {
-            "type": "Data Store",
-            "description": "",
-            "x": -952.8595897809765,
-            "y": 569.5335496382913,
-            "url": {
-                "dialect": "sqlite",
-                "host": "",
-                "port": "",
-                "database": {
-                    "type": "path",
-                    "relative": true,
-                    "path": ".spinetoolbox/items/data_store_time_series_rel/Data Store time series rel.sqlite"
-                }
-            }
-        },
-        "Exporter with index rel": {
-            "type": "Exporter",
-            "description": "",
-            "x": -771.5705973060988,
-            "y": 567.3396881220581,
-            "output_time_stamps": false,
-            "cancel_on_error": true,
-            "output_labels": [
-                {
-                    "in_label": "db_url@Data Store time series rel",
-                    "out_label": "temp_rel.xlsx"
-                }
-            ],
-            "specification": "add_index_rel"
-        },
-        "Importer GIS time series rel": {
-            "type": "Importer",
-            "description": "",
-            "x": -587.5964110763703,
-            "y": 567.6998540671627,
-            "specification": "import_with_timeseries_rel",
-            "cancel_on_error": false,
-            "on_conflict": "replace",
-            "file_selection": [
-                [
-                    "temp_rel.xlsx",
                     true
                 ]
             ]
@@ -861,12 +805,28 @@
             ],
             "db_references": []
         },
-        "Importer GIS hydro-ror": {
+        "Data Store time series hydro-ror": {
+            "type": "Data Store",
+            "description": "",
+            "x": -952.8595897809765,
+            "y": 569.5335496382913,
+            "url": {
+                "dialect": "sqlite",
+                "host": "",
+                "port": "",
+                "database": {
+                    "type": "path",
+                    "relative": true,
+                    "path": ".spinetoolbox/items/data_store_time_series_hydro-ror/Data Store time series hydro-ror.sqlite"
+                }
+            }
+        },
+        "Importer inflow pattern hydro-ror": {
             "type": "Importer",
             "description": "",
-            "x": -1125.1209699271594,
-            "y": 569.2529047599025,
-            "specification": "GIS data hydro-ror",
+            "x": -1155.7028659268221,
+            "y": 570.2612699363079,
+            "specification": "hydro-ror time series",
             "cancel_on_error": false,
             "on_conflict": "replace",
             "file_selection": [
@@ -892,6 +852,36 @@
                 ],
                 [
                     "<project>/model-data/global-energy-gis/hydro-ror.xlsx",
+                    true
+                ]
+            ]
+        },
+        "Exporter with index hydro-ror": {
+            "type": "Exporter",
+            "description": "",
+            "x": -766.5287714240719,
+            "y": 569.3564184748689,
+            "output_time_stamps": false,
+            "cancel_on_error": true,
+            "output_labels": [
+                {
+                    "in_label": "db_url@Data Store time series hydro-ror",
+                    "out_label": "temp_hydro-ror.xlsx"
+                }
+            ],
+            "specification": "add_index"
+        },
+        "Importer hydro-ror time series": {
+            "type": "Importer",
+            "description": "",
+            "x": -587.5964110763703,
+            "y": 567.6998540671627,
+            "specification": "import_with_timeseries",
+            "cancel_on_error": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "temp_hydro-ror.xlsx",
                     true
                 ]
             ]

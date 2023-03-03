@@ -229,6 +229,42 @@
                             }
                         ]
                     }
+                },
+                {
+                    "Fix units_on when rolling": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 2
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 9
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 10
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 9
+                            }
+                        ]
+                    }
                 }
             ],
             "NOR": [
@@ -287,6 +323,42 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Fix units_on when rolling": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 2
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 9
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 10
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 9
                             }
                         ]
                     }
@@ -520,6 +592,42 @@
                     }
                 },
                 {
+                    "Fix units_on when rolling": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 2
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 9
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 10
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 9
+                            }
+                        ]
+                    }
+                },
+                {
                     "Object parameter online_variable_type": {
                         "mapping": [
                             {
@@ -748,6 +856,42 @@
                     }
                 },
                 {
+                    "Fix units_on when rolling": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 2
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 9
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 10
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 9
+                            }
+                        ]
+                    }
+                },
+                {
                     "Object parameter online_variable_type": {
                         "mapping": [
                             {
@@ -971,6 +1115,42 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Fix units_on when rolling": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": 2
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "header",
+                                "value": 9
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 10
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": 9
                             }
                         ]
                     }
@@ -1967,7 +2147,9 @@
                 "5": "float",
                 "6": "string",
                 "7": "string",
-                "8": "string"
+                "8": "string",
+                "9": "duration",
+                "10": "string"
             },
             "NOR": {
                 "0": "string",
@@ -1978,7 +2160,9 @@
                 "5": "string",
                 "6": "string",
                 "7": "string",
-                "8": "string"
+                "8": "string",
+                "9": "duration",
+                "10": "string"
             },
             "SWE": {
                 "0": "string",
@@ -1989,7 +2173,9 @@
                 "5": "string",
                 "6": "string",
                 "7": "string",
-                "8": "string"
+                "8": "string",
+                "9": "duration",
+                "10": "string"
             },
             "DEN": {
                 "0": "string",
@@ -2000,7 +2186,9 @@
                 "5": "string",
                 "6": "string",
                 "7": "string",
-                "8": "string"
+                "8": "string",
+                "9": "duration",
+                "10": "string"
             },
             "BAL": {
                 "0": "string",
@@ -2011,7 +2199,9 @@
                 "5": "string",
                 "6": "string",
                 "7": "string",
-                "8": "string"
+                "8": "string",
+                "9": "duration",
+                "10": "string"
             },
             "hydro_pumped_storage": {
                 "0": "string",

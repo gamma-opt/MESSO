@@ -61,60 +61,6 @@
                             }
                         ]
                     }
-                },
-                {
-                    "Object parameter fix_node_state": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": "hidden",
-                                "value": "SWE_hydro-reservoir"
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 2
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValueType",
-                                "position": "hidden",
-                                "value": "time_series",
-                                "options": {
-                                    "repeat": true
-                                }
-                            },
-                            {
-                                "map_type": "IndexName",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValueIndex",
-                                "position": 0
-                            },
-                            {
-                                "map_type": "ExpandedValue",
-                                "position": 2
-                            }
-                        ]
-                    }
                 }
             ],
             "norway": [
@@ -168,60 +114,6 @@
                             {
                                 "map_type": "ExpandedValue",
                                 "position": 1
-                            }
-                        ]
-                    }
-                },
-                {
-                    "Object parameter fix_node_state": {
-                        "mapping": [
-                            {
-                                "map_type": "ObjectClass",
-                                "position": "hidden",
-                                "value": "node"
-                            },
-                            {
-                                "map_type": "Object",
-                                "position": "hidden",
-                                "value": "NOR_hydro-reservoir"
-                            },
-                            {
-                                "map_type": "ObjectMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterDefinition",
-                                "position": "header",
-                                "value": 2
-                            },
-                            {
-                                "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
-                            },
-                            {
-                                "map_type": "ParameterValueMetadata",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValueType",
-                                "position": "hidden",
-                                "value": "time_series",
-                                "options": {
-                                    "repeat": true
-                                }
-                            },
-                            {
-                                "map_type": "IndexName",
-                                "position": "hidden"
-                            },
-                            {
-                                "map_type": "ParameterValueIndex",
-                                "position": 0
-                            },
-                            {
-                                "map_type": "ExpandedValue",
-                                "position": 2
                             }
                         ]
                     }
