@@ -18,7 +18,7 @@ ssh jiahuang@euler.ethz.ch
 `Git` (need not be loaded) and `Gurobi` (need be loaded) are available in Euler.
 - 2.1 Check latest available Julia version by `module spider julia`, then follow the instruction to load the corresponding modules, e.g.
     ```console
-    module load gcc/6.3.0 julia/1.7.3 gurobi
+    module load gcc/6.3.0 julia/1.8.5 gurobi
     ```
 - 2.2 Install relevant julia package in a central `SpineOpt` environment
 First of all, move to the working directory and then call `Julia REPL`
@@ -99,9 +99,13 @@ Under the directory of the built Julia environment, call Julia REPL and activate
     ```
     Install cloned `spinedb-api`
     ```console
-    /cluster/home/jiahuang/.julia/conda/3/bin/python -m pip install --user ./Spine-Database-API
+    /cluster/home/jiahuang/.julia/conda/3/bin/python -m pip install -e ./Spine-Database-API
     ```
     Other steps remain the same as the above sections 2.1-2.4. Update of packages is documented in `batch_update_SpineOpt_env_local.sh` and `update_env_packages.jl` at directory `$HOME/Tools/SpineOpt`.
+    * **Note**: to manage the pip installed packages listed by `Conda.list()` (packages affiliated with Channel "pypi"), one should do either of the following options:
+    1. `conda config --set pip_interop_enabled True` in **console** (see [conda doc](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/pip-interoperability.html#improving-interoperability-with-pip)), and/or
+    2. `Conda.pip_interop(true)`in **Julia REPL** (see [Conda.jl doc](https://github.com/JuliaPy/Conda.jl#conda-and-pip))
+    To check whether it is set correctly, use `conda config --show` and lookup the "pip_interop_enabled" parameter.
 
 
 ## 3. Run the workflow
