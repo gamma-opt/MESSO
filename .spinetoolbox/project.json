@@ -47,7 +47,7 @@
                 {
                     "type": "path",
                     "relative": true,
-                    "path": ".spinetoolbox/specifications/Importer/hydro-ror_time_series.json"
+                    "path": ".spinetoolbox/specifications/Importer/hydro-ror_timeseries_prepare.json"
                 }
             ],
             "Exporter": [
@@ -94,20 +94,20 @@
                 ]
             },
             {
-                "name": "from Data Connection GIS to Importer GIS",
+                "name": "from Data Connection Capacity Factor to Importer wind and solar",
                 "from": [
-                    "Data Connection GIS",
+                    "Data Connection Capacity Factor",
                     "right"
                 ],
                 "to": [
-                    "Importer GIS",
+                    "Importer wind and solar",
                     "left"
                 ]
             },
             {
-                "name": "from Importer GIS to Data Store time series",
+                "name": "from Importer wind and solar to Data Store time series",
                 "from": [
-                    "Importer GIS",
+                    "Importer wind and solar",
                     "right"
                 ],
                 "to": [
@@ -127,75 +127,20 @@
                 ]
             },
             {
-                "name": "from Exporter with index to Importer GIS time series",
+                "name": "from Exporter with index to Importer time series",
                 "from": [
                     "Exporter with index",
                     "right"
                 ],
                 "to": [
-                    "Importer GIS time series",
+                    "Importer time series",
                     "left"
                 ]
             },
             {
-                "name": "from Importer GIS time series to Main Input Data Store",
+                "name": "from Importer time series to Main Input Data Store",
                 "from": [
-                    "Importer GIS time series",
-                    "right"
-                ],
-                "to": [
-                    "Main Input Data Store",
-                    "left"
-                ]
-            },
-            {
-                "name": "from Data Connection GIS to Importer inflow pattern hydro-ror",
-                "from": [
-                    "Data Connection GIS",
-                    "bottom"
-                ],
-                "to": [
-                    "Importer inflow pattern hydro-ror",
-                    "left"
-                ]
-            },
-            {
-                "name": "from Importer inflow pattern hydro-ror to Data Store time series hydro-ror",
-                "from": [
-                    "Importer inflow pattern hydro-ror",
-                    "right"
-                ],
-                "to": [
-                    "Data Store time series hydro-ror",
-                    "left"
-                ]
-            },
-            {
-                "name": "from Data Store time series hydro-ror to Exporter with index hydro-ror",
-                "from": [
-                    "Data Store time series hydro-ror",
-                    "right"
-                ],
-                "to": [
-                    "Exporter with index hydro-ror",
-                    "left"
-                ]
-            },
-            {
-                "name": "from Exporter with index hydro-ror to Importer hydro-ror time series",
-                "from": [
-                    "Exporter with index hydro-ror",
-                    "right"
-                ],
-                "to": [
-                    "Importer hydro-ror time series",
-                    "left"
-                ]
-            },
-            {
-                "name": "from Importer hydro-ror time series to Main Input Data Store",
-                "from": [
-                    "Importer hydro-ror time series",
+                    "Importer time series",
                     "right"
                 ],
                 "to": [
@@ -391,6 +336,28 @@
                     "Main Input Data Store",
                     "left"
                 ]
+            },
+            {
+                "name": "from Importer inflow pattern hydro-ror to Data Store time series",
+                "from": [
+                    "Importer inflow pattern hydro-ror",
+                    "right"
+                ],
+                "to": [
+                    "Data Store time series",
+                    "left"
+                ]
+            },
+            {
+                "name": "from Data Connection Capacity Factor to Importer inflow pattern hydro-ror",
+                "from": [
+                    "Data Connection Capacity Factor",
+                    "right"
+                ],
+                "to": [
+                    "Importer inflow pattern hydro-ror",
+                    "left"
+                ]
             }
         ],
         "jumps": []
@@ -427,80 +394,6 @@
             ],
             "specification": "add_index"
         },
-        "Data Connection GIS": {
-            "type": "Data Connection",
-            "description": "",
-            "x": -1302.015323575148,
-            "y": 385.27721923955306,
-            "file_references": [
-                {
-                    "type": "path",
-                    "relative": true,
-                    "path": "model-data/global-energy-gis/BAL.csv"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
-                    "path": "model-data/global-energy-gis/DEN.csv"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
-                    "path": "model-data/global-energy-gis/FIN.csv"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
-                    "path": "model-data/global-energy-gis/NOR.csv"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
-                    "path": "model-data/global-energy-gis/SWE.csv"
-                },
-                {
-                    "type": "path",
-                    "relative": true,
-                    "path": "model-data/global-energy-gis/hydro-ror.xlsx"
-                }
-            ],
-            "db_references": []
-        },
-        "Importer GIS": {
-            "type": "Importer",
-            "description": "",
-            "x": -1125.010899928587,
-            "y": 385.41499883731177,
-            "specification": "GIS data",
-            "cancel_on_error": false,
-            "on_conflict": "replace",
-            "file_selection": [
-                [
-                    "<project>/model-data/global-energy-gis/BAL.csv",
-                    true
-                ],
-                [
-                    "<project>/model-data/global-energy-gis/DEN.csv",
-                    true
-                ],
-                [
-                    "<project>/model-data/global-energy-gis/FIN.csv",
-                    true
-                ],
-                [
-                    "<project>/model-data/global-energy-gis/NOR.csv",
-                    true
-                ],
-                [
-                    "<project>/model-data/global-energy-gis/SWE.csv",
-                    true
-                ],
-                [
-                    "<project>/model-data/global-energy-gis/hydro-ror.xlsx",
-                    false
-                ]
-            ]
-        },
         "Data Store time series": {
             "type": "Data Store",
             "description": "",
@@ -516,21 +409,6 @@
                     "path": ".spinetoolbox/items/data_store_time_series/Data Store time series.sqlite"
                 }
             }
-        },
-        "Importer GIS time series": {
-            "type": "Importer",
-            "description": "",
-            "x": -586.9587436055815,
-            "y": 385.96574922971007,
-            "specification": "import_with_timeseries",
-            "cancel_on_error": false,
-            "on_conflict": "replace",
-            "file_selection": [
-                [
-                    "temp.xlsx",
-                    true
-                ]
-            ]
         },
         "Data Connection Capacities": {
             "type": "Data Connection",
@@ -805,28 +683,12 @@
             ],
             "db_references": []
         },
-        "Data Store time series hydro-ror": {
-            "type": "Data Store",
-            "description": "",
-            "x": -952.8595897809765,
-            "y": 569.5335496382913,
-            "url": {
-                "dialect": "sqlite",
-                "host": "",
-                "port": "",
-                "database": {
-                    "type": "path",
-                    "relative": true,
-                    "path": ".spinetoolbox/items/data_store_time_series_hydro-ror/Data Store time series hydro-ror.sqlite"
-                }
-            }
-        },
         "Importer inflow pattern hydro-ror": {
             "type": "Importer",
             "description": "",
-            "x": -1155.7028659268221,
-            "y": 570.2612699363079,
-            "specification": "hydro-ror time series",
+            "x": -1132.754283778586,
+            "y": 517.1171849614451,
+            "specification": "hydro-ror timeseries prepare",
             "cancel_on_error": false,
             "on_conflict": "replace",
             "file_selection": [
@@ -856,33 +718,92 @@
                 ]
             ]
         },
-        "Exporter with index hydro-ror": {
-            "type": "Exporter",
-            "description": "",
-            "x": -766.5287714240719,
-            "y": 569.3564184748689,
-            "output_time_stamps": false,
-            "cancel_on_error": true,
-            "output_labels": [
-                {
-                    "in_label": "db_url@Data Store time series hydro-ror",
-                    "out_label": "temp_hydro-ror.xlsx"
-                }
-            ],
-            "specification": "add_index"
-        },
-        "Importer hydro-ror time series": {
+        "Importer time series": {
             "type": "Importer",
             "description": "",
-            "x": -587.5964110763703,
-            "y": 567.6998540671627,
+            "x": -586.9587436055815,
+            "y": 385.96574922971007,
             "specification": "import_with_timeseries",
             "cancel_on_error": false,
             "on_conflict": "replace",
             "file_selection": [
                 [
-                    "temp_hydro-ror.xlsx",
+                    "temp.xlsx",
                     true
+                ]
+            ]
+        },
+        "Data Connection Capacity Factor": {
+            "type": "Data Connection",
+            "description": "",
+            "x": -1302.015323575148,
+            "y": 385.27721923955306,
+            "file_references": [
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/BAL.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/DEN.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/FIN.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/NOR.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/SWE.csv"
+                },
+                {
+                    "type": "path",
+                    "relative": true,
+                    "path": "model-data/global-energy-gis/hydro-ror.xlsx"
+                }
+            ],
+            "db_references": []
+        },
+        "Importer wind and solar": {
+            "type": "Importer",
+            "description": "",
+            "x": -1125.010899928587,
+            "y": 385.41499883731177,
+            "specification": "GIS data",
+            "cancel_on_error": false,
+            "on_conflict": "replace",
+            "file_selection": [
+                [
+                    "<project>/model-data/global-energy-gis/BAL.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/DEN.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/FIN.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/NOR.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/SWE.csv",
+                    true
+                ],
+                [
+                    "<project>/model-data/global-energy-gis/hydro-ror.xlsx",
+                    false
                 ]
             ]
         }

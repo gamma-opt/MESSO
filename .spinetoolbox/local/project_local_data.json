@@ -6,9 +6,7 @@
                 "password": ""
             }
         },
-        "Data Connection GIS": {
-            "db_credentials": {}
-        },
+        "Exporter with index": {},
         "Data Store time series": {
             "url": {
                 "username": "",
@@ -33,17 +31,15 @@
         "Data Connection Demands": {
             "db_credentials": {}
         },
+        "Exporter Output": {},
         "Data Connection Ramping": {
             "db_credentials": {}
         },
         "Data Connection Hydro Reservoir": {
             "db_credentials": {}
         },
-        "Data Store time series hydro-ror": {
-            "url": {
-                "username": "",
-                "password": ""
-            }
+        "Data Connection Capacity Factor": {
+            "db_credentials": {}
         }
     }
 }
