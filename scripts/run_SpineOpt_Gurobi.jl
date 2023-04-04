@@ -17,15 +17,24 @@ using JuMP
 end
 
 # Show active variables and constraints
-println("*** Active variables: ***")
-for key in keys(m.ext[:spineopt].variables)
-    !isempty(m.ext[:spineopt].variables[key]) && println(key)
-end
-println("*** Active constraints: ***")
-for key in keys(m.ext[:spineopt].constraints)
-    !isempty(m.ext[:spineopt].constraints[key]) && println(key)
-end
 println("*** Unlisted active values: ***")
 for key in setdiff(keys(m.ext[:spineopt].values), keys(m.ext[:spineopt].outputs))
     !isempty(m.ext[:spineopt].values[key]) && println(key)
+end
+
+"""
+A function to print the active items in the built SpineOpt model.
+"""
+function print_active(m::JuMP.Model, item::Symbol)
+    println("*** Active $item: ***")
+    eval(
+        :(for key in keys(m.ext[:spineopt].$item)
+            !isempty(m.ext[:spineopt].$item[key]) && println(key)
+        end)
+    )
+end
+
+items = [:variables, :constraints, :objective_terms]
+for i in items
+    print_active(m, i)
 end
