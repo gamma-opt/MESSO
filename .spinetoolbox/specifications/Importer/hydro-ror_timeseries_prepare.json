@@ -1,0 +1,142 @@
+{
+    "name": "hydro-ror timeseries prepare",
+    "item_type": "Importer",
+    "mapping": {
+        "table_mappings": {
+            "inflow": [
+                {
+                    "Mapping 1": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "unit_availability_factor": [
+                {
+                    "Object parameter unit_availability_factor": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": -1,
+                                "read_start_row": 2
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": "header"
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "table_name",
+                                "value": "unit_availability_factor"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": -2
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValueType",
+                                "position": "hidden",
+                                "value": "array"
+                            },
+                            {
+                                "map_type": "IndexName",
+                                "position": "hidden",
+                                "value": "time_step"
+                            },
+                            {
+                                "map_type": "ParameterValueIndex",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ExpandedValue",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "info": [
+                {
+                    "Mapping 1": {
+                        "mapping": [
+                            {
+                                "map_type": "ObjectClass",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "Object",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ObjectMetadata",
+                                "position": "hidden"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "selected_tables": [
+            "unit_availability_factor"
+        ],
+        "table_options": {
+            "inflow": {},
+            "unit_availability_factor": {
+                "header": true,
+                "read_until_col": true,
+                "read_until_row": true
+            },
+            "info": {}
+        },
+        "table_types": {
+            "unit_availability_factor": {
+                "0": "float",
+                "1": "float",
+                "2": "float",
+                "3": "float"
+            },
+            "info": {
+                "0": "string",
+                "1": "string",
+                "2": "string",
+                "3": "string",
+                "4": "string",
+                "5": "string",
+                "6": "string",
+                "7": "string",
+                "8": "string",
+                "9": "string",
+                "10": "string"
+            }
+        },
+        "table_default_column_type": {},
+        "table_row_types": {
+            "unit_availability_factor": {
+                "0": "string",
+                "1": "string"
+            }
+        },
+        "source_type": "ExcelConnector"
+    },
+    "description": ""
+}

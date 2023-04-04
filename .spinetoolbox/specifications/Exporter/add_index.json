@@ -10,7 +10,7 @@
                 {
                     "map_type": "FixedValue",
                     "position": "table_name",
-                    "value": "indexed_demand"
+                    "value": "indexed_values"
                 },
                 {
                     "map_type": "ObjectClass",

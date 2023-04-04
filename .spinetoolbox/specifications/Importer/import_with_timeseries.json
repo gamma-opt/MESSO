@@ -3,9 +3,9 @@
     "item_type": "Importer",
     "mapping": {
         "table_mappings": {
-            "indexed_demand": [
+            "indexed_values": [
                 {
-                    "Mapping 1": {
+                    "build_datetime_indices": {
                         "mapping": [
                             {
                                 "map_type": "ObjectClass",
@@ -57,13 +57,13 @@
             ]
         },
         "selected_tables": [
-            "indexed_demand"
+            "indexed_values"
         ],
         "table_options": {
-            "indexed_demand": {}
+            "indexed_values": {}
         },
         "table_types": {
-            "indexed_demand": {
+            "indexed_values": {
                 "0": {
                     "name": "integer sequence datetime",
                     "start_datetime": "2018-01-01T00:00:00",
