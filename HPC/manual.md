@@ -67,7 +67,7 @@ Under the directory of the built Julia environment, call Julia REPL and activate
     ```
     Then install `spinedb-api` to the python installed in `PyCall.pyprogramname` by terminal command, e.g.
     ```console
-    /cluster/home/jiahuang/.julia/conda/3/bin/python -m pip install --user 'git+https://github.com/Spine-project/Spine-Database-API'
+    $HOME/.julia/conda/3/bin/python -m pip install --user 'git+https://github.com/Spine-project/Spine-Database-API'
     ```
 - 2.4 Maintanence of the packages
     - Update all Julia packages:
@@ -76,7 +76,7 @@ Under the directory of the built Julia environment, call Julia REPL and activate
     ```
     - Update `spinedb-dpi`:
     ```console
-    /cluster/home/jiahuang/.julia/conda/3/bin/python -m pip install --upgrade --user 'git+https://github.com/Spine-project/Spine-Database-API'
+    $HOME/.julia/conda/3/bin/python -m pip install --upgrade --user 'git+https://github.com/Spine-project/Spine-Database-API'
     ```
     - Update other packages installed in the conda python for Julia:
     ```Julia
@@ -94,12 +94,12 @@ Under the directory of the built Julia environment, call Julia REPL and activate
     In Julia REPL
     ```Julia
     julia> ] activate .
-    (SpineOpt) pkg> add /cluster/home/jiahuang/Tools/SpineOpt/SpineInterface.jl
-    (SpineOpt) pkg> add /cluster/home/jiahuang/Tools/SpineOpt/SpineOpt.jl
+    (SpineOpt) pkg> dev /cluster/home/jiahuang/Tools/SpineOpt/SpineInterface.jl
+    (SpineOpt) pkg> dev /cluster/home/jiahuang/Tools/SpineOpt/SpineOpt.jl
     ```
     Install cloned `spinedb-api`
     ```console
-    /cluster/home/jiahuang/.julia/conda/3/bin/python -m pip install -e ./Spine-Database-API
+    $HOME/.julia/conda/3/bin/python -m pip install -e ./Spine-Database-API
     ```
     Other steps remain the same as the above sections 2.1-2.4. Update of packages is documented in `batch_update_SpineOpt_env_local.sh` and `update_env_packages.jl` at directory `$HOME/Tools/SpineOpt`.
     * **Note**: to manage the pip installed packages listed by `Conda.list()` (packages affiliated with Channel "pypi"), one should do either of the following options:
