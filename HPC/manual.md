@@ -99,13 +99,14 @@ Under the directory of the built Julia environment, call Julia REPL and activate
     ```
     Install cloned `spinedb-api`
     ```console
+    cd $HOME/Tools/SpineOpt
     $HOME/.julia/conda/3/bin/python -m pip install -e ./Spine-Database-API
     ```
     Other steps remain the same as the above sections 2.1-2.4. Update of packages is documented in `batch_update_SpineOpt_env_local.sh` and `update_env_packages.jl` at directory `$HOME/Tools/SpineOpt`.
     * **Note**: to manage the pip installed packages listed by `Conda.list()` (packages affiliated with Channel "pypi"), one should do either of the following options:
     1. `conda config --set pip_interop_enabled True` in **console** (see [conda doc](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/pip-interoperability.html#improving-interoperability-with-pip)), and/or
     2. `Conda.pip_interop(true)`in **Julia REPL** (see [Conda.jl doc](https://github.com/JuliaPy/Conda.jl#conda-and-pip))
-    To check whether it is set correctly, use `conda config --show` and lookup the "pip_interop_enabled" parameter.
+    To check whether it is set correctly, use `conda config --show` and lookup the "pip_interop_enabled" parameter. For conda environment update, remember to turn this option off (`Conda.pip_interop(false)`) to avoid environment inconsistency due to package `spinedb-api`.
 
 
 ## 3. Run the workflow

@@ -29,7 +29,7 @@ function print_active(m::JuMP.Model, item::Symbol)
     println("*** Active $item: ***")
     eval(
         :(for key in keys(m.ext[:spineopt].$item)
-            !isempty(m.ext[:spineopt].$item[key]) && println(key)
+            !(isempty(m.ext[:spineopt].$item[key]) || isequal(m.ext[:spineopt].$item[key], (0, 0))) && println(key)
         end)
     )
 end
