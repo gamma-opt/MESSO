@@ -51,9 +51,9 @@ Under the directory of the built Julia environment, call Julia REPL and activate
     julia> ] activate .
     (SpineOpt) pkg> add PyCall
     (SpineOpt) pkg> add Conda
-    # Julia 1.7.3 uses Python3.6 which is not supported by spinedb-api, so we need to config a newer python version
+    # To config a (latest) python version for Julia 
     ```
-    Then initialise a newer Julia-specific conda python by `using Conda;   Conda.list()`.
+    Then initialise a newer Julia-specific conda python by `using Conda; Conda.list()`.
     ```Julia
     Using PyCall
     ENV["PYTHON"] = ""
@@ -115,21 +115,22 @@ environment directory: `$HOME/Tools/SpineOpt`
 run batch scripts in a chain:
 ```console
 cd $HOME/Projects/NordPool-MESSO
-copy_folder=$(sbatch --parsable -J job1 sbatch_copy_project_folder_to_scratch.sh)
-execution=$(sbatch --parsable -J job2 -d afterany:$copy_folder --array=1-8:step sbatch_run_SpineOpt.sh)
-sbatch -J job3 -d afterany:$execution sbatch_return_outputdb.sh
+copy_folder=$(sbatch --parsable -J job1 < sbatch_copy_project_folder_to_scratch.sh)
+execution=$(sbatch --parsable -J job2 -d afterany:$copy_folder --array=1-8:step < sbatch_run_SpineOpt.sh)
+sbatch -J job3 -d afterany:$execution < sbatch_return_outputdb.sh
 ```
 where `step` is an integer, meaning that the tasks having index = $1+n \cdot step$ within the given range (1-8 in this case) are to be executed ([details](https://scicomp.ethz.ch/wiki/LSF_to_Slurm_quick_reference#Job_array)).
 
 Or simply run the batch script for running SpineOpt
 ```console
 cd $HOME/BatchScripts/NordPool-MESSO
-sbatch --array=1-8 sbatch_run_SpineOpt.sh
+sbatch --array=1-8 < sbatch_run_SpineOpt.sh
 ```
 followed by
 ```console
-sbatch_send_back_outputdb.sh
+sbatch < sbatch_return_outputdb.sh
 ```
+**Note**: the symbol "<" is used because the sbatch script to be submitted contains "#SBATCH" statements (see [here](https://scicomp.ethz.ch/wiki/FAQ#How_do_I_submit_a_shell_script.3F)).
 
 ## Useful links:
 https://scicomp.ethz.ch/wiki/LSF_to_Slurm_quick_reference
