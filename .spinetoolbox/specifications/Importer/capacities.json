@@ -265,6 +265,122 @@
                             }
                         ]
                     }
+                },
+                {
+                    "Relationship units_on__temporal_block active": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "header",
+                                "value": 11
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "temporal_block"
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 11,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "is_active"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 13
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Relationship units_on__temporal_block active false": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "header",
+                                "value": 11
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "temporal_block"
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 11,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "is_active"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 12
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "false"
+                            }
+                        ]
+                    }
                 }
             ],
             "NOR": [
@@ -526,6 +642,122 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Relationship units_on__temporal_block active": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "header",
+                                "value": 11
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "temporal_block"
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 11,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "is_active"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 13
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Relationship units_on__temporal_block active false": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "header",
+                                "value": 11
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "temporal_block"
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 11,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "is_active"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 12
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "false"
                             }
                         ]
                     }
@@ -793,6 +1025,122 @@
                             }
                         ]
                     }
+                },
+                {
+                    "Relationship units_on__temporal_block active": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "header",
+                                "value": 11
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "temporal_block"
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 11,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "is_active"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 13
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Relationship units_on__temporal_block active false": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "header",
+                                "value": 11
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "temporal_block"
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 11,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "is_active"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 12
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "false"
+                            }
+                        ]
+                    }
                 }
             ],
             "DEN": [
@@ -1057,6 +1405,122 @@
                             }
                         ]
                     }
+                },
+                {
+                    "Relationship units_on__temporal_block active": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "header",
+                                "value": 11
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "temporal_block"
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 11,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "is_active"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 13
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Relationship units_on__temporal_block active false": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "header",
+                                "value": 11
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "temporal_block"
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 11,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "is_active"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 12
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "false"
+                            }
+                        ]
+                    }
                 }
             ],
             "BAL": [
@@ -1318,6 +1782,122 @@
                             {
                                 "map_type": "ParameterValue",
                                 "position": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Relationship units_on__temporal_block active": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "header",
+                                "value": 11
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "temporal_block"
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 11,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "is_active"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 13
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Relationship units_on__temporal_block active false": {
+                        "mapping": [
+                            {
+                                "map_type": "RelationshipClass",
+                                "position": "header",
+                                "value": 11
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "unit"
+                            },
+                            {
+                                "map_type": "RelationshipClassObjectClass",
+                                "position": "hidden",
+                                "value": "temporal_block"
+                            },
+                            {
+                                "map_type": "Relationship",
+                                "position": "hidden",
+                                "value": "relationship"
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 2,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipObject",
+                                "position": 11,
+                                "import_objects": true
+                            },
+                            {
+                                "map_type": "RelationshipMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterDefinition",
+                                "position": "hidden",
+                                "value": "is_active"
+                            },
+                            {
+                                "map_type": "Alternative",
+                                "position": 12
+                            },
+                            {
+                                "map_type": "ParameterValueMetadata",
+                                "position": "hidden"
+                            },
+                            {
+                                "map_type": "ParameterValue",
+                                "position": "hidden",
+                                "value": "false"
                             }
                         ]
                     }
@@ -2149,7 +2729,10 @@
                 "7": "string",
                 "8": "string",
                 "9": "duration",
-                "10": "string"
+                "10": "string",
+                "11": "string",
+                "12": "string",
+                "13": "string"
             },
             "NOR": {
                 "0": "string",
@@ -2162,7 +2745,10 @@
                 "7": "string",
                 "8": "string",
                 "9": "duration",
-                "10": "string"
+                "10": "string",
+                "11": "string",
+                "12": "string",
+                "13": "string"
             },
             "SWE": {
                 "0": "string",
@@ -2175,7 +2761,10 @@
                 "7": "string",
                 "8": "string",
                 "9": "duration",
-                "10": "string"
+                "10": "string",
+                "11": "string",
+                "12": "string",
+                "13": "string"
             },
             "DEN": {
                 "0": "string",
@@ -2188,7 +2777,10 @@
                 "7": "string",
                 "8": "string",
                 "9": "duration",
-                "10": "string"
+                "10": "string",
+                "11": "string",
+                "12": "string",
+                "13": "string"
             },
             "BAL": {
                 "0": "string",
@@ -2201,7 +2793,10 @@
                 "7": "string",
                 "8": "string",
                 "9": "duration",
-                "10": "string"
+                "10": "string",
+                "11": "string",
+                "12": "string",
+                "13": "string"
             },
             "hydro_pumped_storage": {
                 "0": "string",
