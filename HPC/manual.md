@@ -130,7 +130,18 @@ followed by
 ```console
 sbatch < sbatch_return_outputdb.sh
 ```
-**Note**: the symbol "<" is used because the sbatch script to be submitted contains "#SBATCH" statements (see [here](https://scicomp.ethz.ch/wiki/FAQ#How_do_I_submit_a_shell_script.3F)).
+To run rolling and perfect foresight (1 year) scenarios separately (different in computational resource), one can try commands:
+```console
+cd $HOME/Projects/NordPool-MESSO
+copy_folder=$(sbatch --parsable -J job1 < sbatch_copy_project_folder_to_scratch.sh)
+rolling=$(sbatch --parsable -J job2 -d afterany:$copy_folder --array=2-8:2 < sbatch_run_SpineOpt_rolling.sh)
+return_output_1=$(sbatch --parsable -J job3 -d afterany:$rolling < sbatch_return_outputdb.sh)
+full_horizon=$(sbatch --parsable -J job4 -d afterany:$return_output_1 --array=1-7:2 < sbatch_run_SpineOpt_1Y.sh)
+sbatch -J job5 -d afterany:$full_horizon < sbatch_return_outputdb.sh
+```
+**Note**: 
+1. Symbol "<" is used because the sbatch script to be submitted contains "#SBATCH" statements (see [here](https://scicomp.ethz.ch/wiki/FAQ#How_do_I_submit_a_shell_script.3F)).
+2. Guest computational resource quota (48 cores, 128G in total, told by a service person in email) may be insufficient for perfect foresight optimization of 1 year. Also see [here](https://scicomp.ethz.ch/wiki/FAQ#My_job_is_terminated_with_the_error_message_slurmstepd:_error:_poll.28.29:_Bad_address) for the signal of running out of memory.
 
 ## Useful links:
 https://scicomp.ethz.ch/wiki/LSF_to_Slurm_quick_reference
