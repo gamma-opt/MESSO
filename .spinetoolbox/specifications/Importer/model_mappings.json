@@ -941,8 +941,7 @@
                             },
                             {
                                 "map_type": "Alternative",
-                                "position": "hidden",
-                                "value": "Base"
+                                "position": 4
                             },
                             {
                                 "map_type": "ParameterValueMetadata",
@@ -1424,7 +1423,8 @@
                 "0": "string",
                 "1": "float",
                 "2": "string",
-                "3": "boolean"
+                "3": "boolean",
+                "4": "string"
             },
             "model_config": {
                 "0": "string",

@@ -1977,7 +1977,6 @@
                                     2,
                                     3,
                                     7,
-                                    8,
                                     9,
                                     10,
                                     11,
@@ -2818,8 +2817,8 @@
                 "16": "string",
                 "17": "boolean",
                 "18": "string",
-                "19": "float",
-                "20": "float"
+                "19": "boolean",
+                "20": "string"
             }
         },
         "table_default_column_type": {},

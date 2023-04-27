@@ -137,7 +137,9 @@
             "sweden weekly": {},
             "sweden": {
                 "column": 1,
-                "header": true
+                "header": true,
+                "read_until_col": true,
+                "read_until_row": true
             },
             "norway": {
                 "header": true,
