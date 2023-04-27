@@ -228,14 +228,14 @@
                     "known_filters": {
                         "db_url@Main Input Data Store": {
                             "scenario_filter": {
-                                "GlobalSolveLP": true,
-                                "GlobalSolveMIP": false,
+                                "GlobalSolveLP": false,
+                                "GlobalSolveMIP": true,
                                 "GlobalSolveRampOptLP": false,
-                                "GlobalSolveRampOptMIP": false,
-                                "RollingScheduleLP": false,
-                                "RollingScheduleMIP": false,
+                                "GlobalSolveRampOptMIP": true,
+                                "RollingScheduleLP": true,
+                                "RollingScheduleMIP": true,
                                 "RollingScheduleRampOptLP": false,
-                                "RollingScheduleRampOptMIP": false
+                                "RollingScheduleRampOptMIP": true
                             },
                             "tool_filter": {
                                 "object_activity_control": true
@@ -260,10 +260,7 @@
                         "db_url@Output Data Store": {
                             "scenario_filter": {
                                 "GlobalSolveLP": true,
-                                "RollingScheduleLP_NoSource_1block_NotWork": true,
-                                "RollingScheduleLP_NoSource_2blocks_NotWork": true,
-                                "RollingScheduleLP_WithoutSource_Work": true,
-                                "RollingSolveLP": true
+                                "RollingScheduleLP": true
                             },
                             "tool_filter": {}
                         }
@@ -484,7 +481,8 @@
                     "type": "resource",
                     "arg": "db_url@Output Data Store"
                 }
-            ]
+            ],
+            "kill_completed_processes": false
         },
         "Main Input Data Store": {
             "type": "Data Store",
@@ -514,7 +512,8 @@
                     "type": "resource",
                     "arg": "db_url@Main Input Data Store"
                 }
-            ]
+            ],
+            "kill_completed_processes": false
         },
         "Data Connection Gen Technologies": {
             "type": "Data Connection",

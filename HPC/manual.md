@@ -136,7 +136,7 @@ cd $HOME/Projects/NordPool-MESSO
 copy_folder=$(sbatch --parsable -J job1 < sbatch_copy_project_folder_to_scratch.sh)
 rolling=$(sbatch --parsable -J job2 -d afterany:$copy_folder --array=2-8:2 < sbatch_run_SpineOpt_rolling.sh)
 return_output_1=$(sbatch --parsable -J job3 -d afterany:$rolling < sbatch_return_outputdb.sh)
-full_horizon=$(sbatch --parsable -J job4 -d afterany:$return_output_1 --array=1-7:2 < sbatch_run_SpineOpt_1Y.sh)
+full_horizon=$(sbatch --parsable -J job4 -d afterany:$return_output_1 --array=1-7:2 < sbatch_run_SpineOpt_full_horizon.sh)
 sbatch -J job5 -d afterany:$full_horizon < sbatch_return_outputdb.sh
 ```
 **Note**: 
