@@ -55,7 +55,7 @@ Under the directory of the built Julia environment, call Julia REPL and activate
     ```
     Then initialise a newer Julia-specific conda python by `using Conda; Conda.list()`.
     ```Julia
-    Using PyCall
+    using PyCall
     ENV["PYTHON"] = ""
     import Pkg; Pkg.build("PyCall")
     ```
